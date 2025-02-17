@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0ng0dcyhrst0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ns167"]
+bg_color = Color(0.475965, 0.562587, 0.980457, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.94, 0.9024, 0.752, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+anti_aliasing_size = 8.0
+
+[node name="CursorRect" type="Panel"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.0
+offset_top = -77.0
+offset_right = 57.0
+offset_bottom = 77.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ns167")
