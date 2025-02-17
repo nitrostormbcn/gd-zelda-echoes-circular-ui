@@ -16,10 +16,5 @@ func get_input_angle() -> float:
 	return offset_angle
 
 func _read_input() -> Vector2:
-	var input = Vector2.ZERO
-	input.x -= Input.get_action_strength("left")
-	input.x += Input.get_action_strength("right")
-	input.y -= Input.get_action_strength("up")
-	input.y += Input.get_action_strength("down")
-	input = input.normalized()
+	var input = Input.get_vector("left", "right", "up", "down")
 	return input

@@ -13,13 +13,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var input = Vector2.ZERO
-	input.x -= Input.get_action_strength(left)
-	input.x += Input.get_action_strength(right)
-	input.y -= Input.get_action_strength(up)
-	input.y += Input.get_action_strength(down)
-	if input.length() > 0:
-		input = input.normalized()
+	var input = Input.get_vector("left", "right", "up", "down")
 	if joystick:
 		var center_bg = self.size / 2 - joystick.size / 2
 		joystick.set_position(center_bg + input * draw_scale)
