@@ -1,18 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://bx3un6w8sjxjf"]
+[gd_scene load_steps=3 format=3 uid="uid://bkuhk77uc66dg"]
 
 [ext_resource type="Texture2D" uid="uid://x8405b5xxxnd" path="res://echoes/Tornando_Echo.png" id="1_bqfgp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3yff7"]
-bg_color = Color(0, 0, 0, 0.247059)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0, 0, 0, 0.45098)
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
+bg_color = Color(0, 0, 0, 0.52549)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 0.741176)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [node name="EchoCard" type="CenterContainer"]
 

@@ -1,0 +1,1022 @@
+[gd_scene load_steps=140 format=3 uid="uid://cjtq5vj577q4s"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_2xv1t"]
+[ext_resource type="Texture2D" uid="uid://bladi7ng45bm1" path="res://images/bg_blur.png" id="1_wuetl"]
+[ext_resource type="Script" path="res://scripts/h_row.gd" id="2_rh2m5"]
+[ext_resource type="PackedScene" uid="uid://dyhp2xmq7wvx7" path="res://echo_scenes/Albatrawl_Echo.tscn" id="3_j426l"]
+[ext_resource type="PackedScene" uid="uid://cvuffnqjgmmj5" path="res://scenes/cursor.tscn" id="3_qldjs"]
+[ext_resource type="Texture2D" uid="uid://ctkngebfw8hct" path="res://images/fullUI.png" id="4_76ssr"]
+[ext_resource type="PackedScene" uid="uid://cympt2v5010o0" path="res://echo_scenes/Ancient_Orb_Echo.tscn" id="4_gx2ab"]
+[ext_resource type="PackedScene" uid="uid://c2wad7q7gi5qf" path="res://echo_scenes/Armos_Echo.tscn" id="5_3odn0"]
+[ext_resource type="PackedScene" uid="uid://br2o4q02itqw4" path="res://echo_scenes/Aruroda_Echo.tscn" id="6_uahru"]
+[ext_resource type="PackedScene" uid="uid://7ye0586xb3ok" path="res://echo_scenes/Baby_Gohma_Echo.tscn" id="7_qgnhf"]
+[ext_resource type="PackedScene" uid="uid://ds3rb88txf4gv" path="res://echo_scenes/Ball_and_Chain_Trooper_Echo.tscn" id="8_xnxb8"]
+[ext_resource type="PackedScene" uid="uid://b7c1668gvg1nq" path="res://echo_scenes/Beakon_Echo.tscn" id="9_hl5po"]
+[ext_resource type="PackedScene" uid="uid://cx3eypy1306qv" path="res://echo_scenes/Beamos_Echo.tscn" id="10_rg0fh"]
+[ext_resource type="PackedScene" uid="uid://cevbog50krhv5" path="res://echo_scenes/Beetle_Echo.tscn" id="11_q2qbc"]
+[ext_resource type="PackedScene" uid="uid://ch4yvaq3du1ah" path="res://echo_scenes/Beetle_Mound_Echo.tscn" id="12_mov1x"]
+[ext_resource type="PackedScene" uid="uid://dtv0g8ogdg6l" path="res://echo_scenes/Bio_Deku_Baba_Echo.tscn" id="13_64215"]
+[ext_resource type="PackedScene" uid="uid://dfb3oxc041efn" path="res://echo_scenes/Biri_Echo.tscn" id="14_2jwlu"]
+[ext_resource type="PackedScene" uid="uid://b2epf07j41vn" path="res://echo_scenes/Bombfish_Echo.tscn" id="15_qnpk8"]
+[ext_resource type="PackedScene" uid="uid://dxab2uqny5r28" path="res://echo_scenes/Boomerang_Boarblin_Echo.tscn" id="16_k73ri"]
+[ext_resource type="PackedScene" uid="uid://b5tx3raqvmfxo" path="res://echo_scenes/Boomerang_Boarblin_Lv_2_Echo.tscn" id="17_l1pax"]
+[ext_resource type="PackedScene" uid="uid://b8ex76e5chtf1" path="res://echo_scenes/Boulder_Echo.tscn" id="18_is3je"]
+[ext_resource type="PackedScene" uid="uid://d3upu1ges4dcj" path="res://echo_scenes/Brazier_Echo.tscn" id="19_oag6s"]
+[ext_resource type="PackedScene" uid="uid://citb11olbplju" path="res://echo_scenes/Buzz_Blob_Echo.tscn" id="20_ec3bn"]
+[ext_resource type="PackedScene" uid="uid://cm5t6xgw7plg6" path="res://echo_scenes/Caromadillo_Echo.tscn" id="21_h37mh"]
+[ext_resource type="PackedScene" uid="uid://diqaftjcpe404" path="res://echo_scenes/Caromadillo_Lv_2_Echo.tscn" id="22_45o7c"]
+[ext_resource type="PackedScene" uid="uid://dnvcp0pcq6yfh" path="res://echo_scenes/Carrot_Echo.tscn" id="23_n5es1"]
+[ext_resource type="PackedScene" uid="uid://d2bnub4ik2ykw" path="res://echo_scenes/Cat_Statue_Echo.tscn" id="24_daace"]
+[ext_resource type="PackedScene" uid="uid://bbkupwo6afeku" path="res://echo_scenes/Chompfin_Echo.tscn" id="25_hp5wa"]
+[ext_resource type="PackedScene" uid="uid://du1a6rphjiqtu" path="res://echo_scenes/Cloud_Echo.tscn" id="26_d7sm4"]
+[ext_resource type="PackedScene" uid="uid://boqn8juthwlqq" path="res://echo_scenes/Club_Boarblin_Echo.tscn" id="27_nvyl2"]
+[ext_resource type="PackedScene" uid="uid://bs7um6ddp3x7m" path="res://echo_scenes/Club_Boarblin_Lv_2_Echo.tscn" id="28_3b6ni"]
+[ext_resource type="PackedScene" uid="uid://dneiad4o06aqq" path="res://echo_scenes/Crawltula_Echo.tscn" id="29_canld"]
+[ext_resource type="PackedScene" uid="uid://s7q5oo7gmf1s" path="res://echo_scenes/Crow_Echo.tscn" id="30_64alq"]
+[ext_resource type="PackedScene" uid="uid://bex4jdrur1gcr" path="res://echo_scenes/Darknut_Echo.tscn" id="31_dlh8d"]
+[ext_resource type="PackedScene" uid="uid://ugj5738w5uwl" path="res://echo_scenes/Darknut_Lv_2_Echo.tscn" id="32_56adi"]
+[ext_resource type="PackedScene" uid="uid://cw46bvvijy6an" path="res://echo_scenes/Darknut_Lv_3_Echo.tscn" id="33_nvhdg"]
+[ext_resource type="PackedScene" uid="uid://bqpjomso40caw" path="res://echo_scenes/Decorative_Shrub_Echo.tscn" id="34_i8y5m"]
+[ext_resource type="PackedScene" uid="uid://4wio8ejeqwbd" path="res://echo_scenes/Deku_Baba_Echo.tscn" id="35_bv8o2"]
+[ext_resource type="PackedScene" uid="uid://p020uyuisnwy" path="res://echo_scenes/Deku_Baba_Lv_2_Echo.tscn" id="36_tpbhi"]
+[ext_resource type="PackedScene" uid="uid://cgivdgcxsdt3q" path="res://echo_scenes/Drippitune_Echo.tscn" id="37_62fxg"]
+[ext_resource type="PackedScene" uid="uid://dg5x0s8ny8ytb" path="res://echo_scenes/Electric_Keese_Echo.tscn" id="38_ceduv"]
+[ext_resource type="PackedScene" uid="uid://daebioljboubh" path="res://echo_scenes/Electric_Wizzrobe_Echo.tscn" id="39_f2c7n"]
+[ext_resource type="PackedScene" uid="uid://nvcvdkr2lk6d" path="res://echo_scenes/Elephant_Statue_Echo.tscn" id="40_7s4a5"]
+[ext_resource type="PackedScene" uid="uid://dnuq1l6t1ia1g" path="res://echo_scenes/Firework_Echo.tscn" id="41_kyd3f"]
+[ext_resource type="PackedScene" uid="uid://cpi8pkw04nhpu" path="res://echo_scenes/Fire_Keese_Echo.tscn" id="42_bwob8"]
+[ext_resource type="PackedScene" uid="uid://lutacxsp6jjk" path="res://echo_scenes/Fire_Octo_Echo.tscn" id="43_c720c"]
+[ext_resource type="PackedScene" uid="uid://dg8hk72rin46s" path="res://echo_scenes/Fire_Wizzrobe_Echo.tscn" id="44_wwu50"]
+[ext_resource type="PackedScene" uid="uid://40qmctjdkinm" path="res://echo_scenes/Flying_Tile_Echo.tscn" id="45_gp6ew"]
+[ext_resource type="PackedScene" uid="uid://bhvaemc7jsh24" path="res://echo_scenes/Freezard_Echo.tscn" id="46_0vdvx"]
+[ext_resource type="PackedScene" uid="uid://bbi5e45bl74he" path="res://echo_scenes/Freeze_Slug_Echo.tscn" id="47_y081v"]
+[ext_resource type="PackedScene" uid="uid://cqhp1ct6633op" path="res://echo_scenes/Gerudo_Pot_Echo.tscn" id="48_pp5k1"]
+[ext_resource type="PackedScene" uid="uid://cvluxsd5h7apj" path="res://echo_scenes/Ghini_Echo.tscn" id="49_j3a72"]
+[ext_resource type="PackedScene" uid="uid://cv1ilq4w5nqsk" path="res://echo_scenes/Ghini_Lv_2_Echo.tscn" id="50_4ca3j"]
+[ext_resource type="PackedScene" uid="uid://bd6nxar0kfh6" path="res://echo_scenes/Ghirro_Echo.tscn" id="51_l0eb5"]
+[ext_resource type="PackedScene" uid="uid://nr6nq44ppa43" path="res://echo_scenes/Giant_Goponga_Flower_Echo.tscn" id="52_8vfl3"]
+[ext_resource type="PackedScene" uid="uid://domnaswa7l8da" path="res://echo_scenes/Gibdo_Echo.tscn" id="53_m8ewy"]
+[ext_resource type="PackedScene" uid="uid://bx2f1weq27cqn" path="res://echo_scenes/Gibdo_Lv_2.tscn" id="54_k63ds"]
+[ext_resource type="PackedScene" uid="uid://csk3bmw4vttfg" path="res://echo_scenes/Goo_Specter_Echo.tscn" id="55_iprp0"]
+[ext_resource type="PackedScene" uid="uid://c04bdptj7b1ta" path="res://echo_scenes/Grilled_Fish_Echo.tscn" id="56_ptvoi"]
+[ext_resource type="PackedScene" uid="uid://d4iwo3cfu5v61" path="res://echo_scenes/Guay_Echo.tscn" id="57_lcovl"]
+[ext_resource type="PackedScene" uid="uid://cfb5sjr8va787" path="res://echo_scenes/Gustmaster_Echo.tscn" id="58_f3vi1"]
+[ext_resource type="PackedScene" uid="uid://cbrutcx2jdstt" path="res://echo_scenes/Hawk_Statue_Echo.tscn" id="59_x0vkp"]
+[ext_resource type="PackedScene" uid="uid://4ofkml41ewq0" path="res://echo_scenes/Hoarder_Echo.tscn" id="60_q5t8j"]
+[ext_resource type="PackedScene" uid="uid://bbfqgvk1qus4b" path="res://echo_scenes/Holmill_Echo.tscn" id="61_6dyog"]
+[ext_resource type="PackedScene" uid="uid://dw7qpuns30pr4" path="res://echo_scenes/Hydrozol_Echo.tscn" id="62_e4odk"]
+[ext_resource type="PackedScene" uid="uid://bv3d3q1lrv5vt" path="res://echo_scenes/Hyrule_Castle_Pot_Echo.tscn" id="63_fp5cc"]
+[ext_resource type="PackedScene" uid="uid://df6bvxcloenbc" path="res://echo_scenes/Ice_Block_Echo.tscn" id="64_cwvb7"]
+[ext_resource type="PackedScene" uid="uid://dhsolrupgfm5d" path="res://echo_scenes/Ice_Keese_Echo.tscn" id="65_wmteq"]
+[ext_resource type="PackedScene" uid="uid://lmjibomd150g" path="res://echo_scenes/Ice_Octo_Echo.tscn" id="66_r32nx"]
+[ext_resource type="PackedScene" uid="uid://d2gah3t78vo3t" path="res://echo_scenes/Ice_Wizzrobe_Echo.tscn" id="67_64x01"]
+[ext_resource type="PackedScene" uid="uid://bhsdyqn3jf328" path="res://echo_scenes/Ignizol_Echo.tscn" id="68_btqtk"]
+[ext_resource type="PackedScene" uid="uid://bmfe0nwvm144n" path="res://echo_scenes/Keese_Echo.tscn" id="69_r722f"]
+[ext_resource type="PackedScene" uid="uid://djrfool33tv17" path="res://echo_scenes/Lava_Rock_Echo.tscn" id="70_4tx55"]
+[ext_resource type="PackedScene" uid="uid://cf6ur3rya0ikq" path="res://echo_scenes/Leever_Echo.tscn" id="71_o4yi1"]
+[ext_resource type="PackedScene" uid="uid://cp3g837v02y2b" path="res://echo_scenes/Lizalfos_%28echoes_of_wisdom%29.tscn" id="72_uacyu"]
+[ext_resource type="PackedScene" uid="uid://crnri53k2oa2a" path="res://echo_scenes/Lizalfos_Lv_2_Echo.tscn" id="73_jhhtw"]
+[ext_resource type="PackedScene" uid="uid://6yrs30mcqpv" path="res://echo_scenes/Lizalfos_Lv_3_Echo.tscn" id="74_a7xps"]
+[ext_resource type="PackedScene" uid="uid://8m0icf54iv1w" path="res://echo_scenes/Lynel_Echo.tscn" id="75_lln8q"]
+[ext_resource type="PackedScene" uid="uid://cupkja75nodl1" path="res://echo_scenes/Meat_Echo.tscn" id="76_j7atm"]
+[ext_resource type="PackedScene" uid="uid://btye1skor4yyw" path="res://echo_scenes/Mini-Moldorm_Echo.tscn" id="77_600rf"]
+[ext_resource type="PackedScene" uid="uid://rgo6xn7k54v" path="res://echo_scenes/Moa_Echo.tscn" id="78_2kf1h"]
+[ext_resource type="PackedScene" uid="uid://cg6iopj2bytuv" path="res://echo_scenes/Mothula_Echo.tscn" id="79_6m574"]
+[ext_resource type="PackedScene" uid="uid://b76xabn5i1oyf" path="res://echo_scenes/Mothula_Lv_2.tscn" id="80_v47vr"]
+[ext_resource type="PackedScene" uid="uid://dvbky8skm3gh5" path="res://echo_scenes/Needlefly_Echo.tscn" id="81_52xn3"]
+[ext_resource type="PackedScene" uid="uid://orn3t7d5hv6j" path="res://echo_scenes/Octorok_Echo.tscn" id="82_nggr1"]
+[ext_resource type="PackedScene" uid="uid://de74dmoesquad" path="res://echo_scenes/Old_Bed_Echo.tscn" id="83_lw77g"]
+[ext_resource type="PackedScene" uid="uid://d3gfdbwmv52q0" path="res://echo_scenes/Pathblade_Echo.tscn" id="84_uwsc4"]
+[ext_resource type="PackedScene" uid="uid://bmf22basfx58q" path="res://echo_scenes/Peahat_Echo.tscn" id="85_u4ono"]
+[ext_resource type="PackedScene" uid="uid://dihg2q27opjgs" path="res://echo_scenes/Piranha_Echo.tscn" id="86_n6e4g"]
+[ext_resource type="PackedScene" uid="uid://bohgmmp5h0tgt" path="res://echo_scenes/Platboom_Echo.tscn" id="87_304wt"]
+[ext_resource type="PackedScene" uid="uid://ddknqn3dbangy" path="res://echo_scenes/Poe_Echo.tscn" id="88_a4v6p"]
+[ext_resource type="PackedScene" uid="uid://ckpowyp7r2cvu" path="res://echo_scenes/Pot_Echo.tscn" id="89_3gixt"]
+[ext_resource type="PackedScene" uid="uid://c4pyi2vkgr23q" path="res://echo_scenes/ReDead_Echo.tscn" id="90_17osu"]
+[ext_resource type="PackedScene" uid="uid://dmfk16cfjfwpy" path="res://echo_scenes/Ribbitune_Echo.tscn" id="91_abmwo"]
+[ext_resource type="PackedScene" uid="uid://clab34hk0wplb" path="res://echo_scenes/Rock_Echo.tscn" id="92_e80d8"]
+[ext_resource type="PackedScene" uid="uid://kkq1kjb7kcoe" path="res://echo_scenes/Rock_Roast_Echo.tscn" id="93_dtd2s"]
+[ext_resource type="PackedScene" uid="uid://domqdhi288lqy" path="res://echo_scenes/Rope_Echo.tscn" id="94_t4n3y"]
+[ext_resource type="PackedScene" uid="uid://ckxdpnk554pka" path="res://echo_scenes/Sand_Crab_Echo.tscn" id="95_4tkwg"]
+[ext_resource type="PackedScene" uid="uid://b7h3ogvni1dwh" path="res://echo_scenes/Sand_Piranha_Echo.tscn" id="96_jhc3u"]
+[ext_resource type="PackedScene" uid="uid://c8v4y0hkgi7he" path="res://echo_scenes/Sea_Urchin_Echo.tscn" id="97_mf0pp"]
+[ext_resource type="PackedScene" uid="uid://ctxctnwfkc5t8" path="res://echo_scenes/Sign_Echo.tscn" id="98_najbn"]
+[ext_resource type="PackedScene" uid="uid://d4i3n5mx2m3xc" path="res://echo_scenes/Snake_Statue_Echo.tscn" id="99_xug1p"]
+[ext_resource type="PackedScene" uid="uid://btwfgxmfdt04n" path="res://echo_scenes/Snomaul_Echo.tscn" id="100_wf3bs"]
+[ext_resource type="PackedScene" uid="uid://bb788pfr7l20o" path="res://echo_scenes/Snowball_Echo.tscn" id="101_ykbry"]
+[ext_resource type="PackedScene" uid="uid://bnqj4bdfsffbt" path="res://echo_scenes/Soft_Bed_Echo.tscn" id="102_5xjs6"]
+[ext_resource type="PackedScene" uid="uid://dfsgss2rc4egb" path="res://echo_scenes/Spark_Echo.tscn" id="103_nud38"]
+[ext_resource type="PackedScene" uid="uid://dq57p31hu7867" path="res://echo_scenes/Spear_Moblin_Echo.tscn" id="104_w5d6t"]
+[ext_resource type="PackedScene" uid="uid://rxymiugc2upd" path="res://echo_scenes/Spear_Moblin_Lv_2_Echo.tscn" id="105_58j1f"]
+[ext_resource type="PackedScene" uid="uid://dqthqmsssxcv5" path="res://echo_scenes/Spiked_Roller_Echo.tscn" id="106_hips6"]
+[ext_resource type="PackedScene" uid="uid://57vckyhxiu1g" path="res://echo_scenes/Strandtula_Echo.tscn" id="107_geq15"]
+[ext_resource type="PackedScene" uid="uid://cgna62wodw3jk" path="res://echo_scenes/Stuffed_Toy_Echo.tscn" id="108_ebnu7"]
+[ext_resource type="PackedScene" uid="uid://bxbovsgjkkacr" path="res://echo_scenes/Sword_Moblin_Echo.tscn" id="109_qvdty"]
+[ext_resource type="PackedScene" uid="uid://c7pterwrh28bs" path="res://echo_scenes/Sword_Moblin_Lv_2_Echo.tscn" id="110_cvd2b"]
+[ext_resource type="PackedScene" uid="uid://bx0djrypwa243" path="res://echo_scenes/Sword_Moblin_Lv_3_Echo.tscn" id="111_oifrx"]
+[ext_resource type="PackedScene" uid="uid://b1wymbgb2xmi7" path="res://echo_scenes/Table_%28echo%29.tscn" id="112_vmt86"]
+[ext_resource type="PackedScene" uid="uid://dkw42c7j1klsy" path="res://echo_scenes/Tangler_Echo.tscn" id="113_nhuup"]
+[ext_resource type="PackedScene" uid="uid://btcq0ikl7jfhi" path="res://echo_scenes/Tangler_Lv_2_Echo.tscn" id="114_8xo6f"]
+[ext_resource type="PackedScene" uid="uid://dwee87vnnkmc3" path="res://echo_scenes/Tektite_Echo.tscn" id="115_dfl0r"]
+[ext_resource type="PackedScene" uid="uid://b48q62g0312ph" path="res://echo_scenes/Tektite_Lv_2_Echo.tscn" id="116_xxcvj"]
+[ext_resource type="PackedScene" uid="uid://cl75c7rv153uj" path="res://echo_scenes/Temper_Tweelus_Echo.tscn" id="117_ng0rl"]
+[ext_resource type="PackedScene" uid="uid://b0d5qr14hbv02" path="res://echo_scenes/Torch_Slug_Echo.tscn" id="118_swvyl"]
+[ext_resource type="PackedScene" uid="uid://bx3un6w8sjxjf" path="res://echo_scenes/Tornando_Echo.tscn" id="119_aq6ey"]
+[ext_resource type="PackedScene" uid="uid://dj1ecwqtyvdpc" path="res://echo_scenes/Trampoline_Echo.tscn" id="120_w4tn5"]
+[ext_resource type="PackedScene" uid="uid://dxtdv2oyds2lu" path="res://echo_scenes/Tweelus_Echo.tscn" id="121_gww4h"]
+[ext_resource type="PackedScene" uid="uid://beb87tb6fymwp" path="res://echo_scenes/Water_Block_Echo.tscn" id="122_h7ayj"]
+[ext_resource type="PackedScene" uid="uid://cgcgygqemcnj4" path="res://echo_scenes/White_Wolfos_Echo.tscn" id="123_hiy6n"]
+[ext_resource type="PackedScene" uid="uid://db4kn1dkkvt78" path="res://echo_scenes/Wind_Cannon_Echo.tscn" id="124_gl3i7"]
+[ext_resource type="PackedScene" uid="uid://c4rbw2p2sivg" path="res://echo_scenes/Wolfos_Echo.tscn" id="125_qi2hl"]
+[ext_resource type="PackedScene" uid="uid://dkg85fdq3a5ne" path="res://echo_scenes/Wooden_Box_Echo.tscn" id="126_r8okl"]
+[ext_resource type="PackedScene" uid="uid://v6oo7b6bap1s" path="res://echo_scenes/Zelda%27s_Bed_Echo.tscn" id="127_6gxv7"]
+[ext_resource type="PackedScene" uid="uid://liiadvr423p0" path="res://echo_scenes/Zirro_Echo.tscn" id="128_1sr0h"]
+[ext_resource type="PackedScene" uid="uid://cyyl58ogfpqk5" path="res://echo_scenes/Zol_Echo.tscn" id="129_vycpe"]
+[ext_resource type="Script" path="res://scripts/spiral_ui.gd" id="131_7h75x"]
+[ext_resource type="Script" path="res://scripts/cursor.gd" id="131_blh5b"]
+[ext_resource type="PackedScene" uid="uid://bopwvd8pljrxj" path="res://scenes/visualize_ui.tscn" id="132_jmclc"]
+
+[sub_resource type="Gradient" id="Gradient_dhee6"]
+offsets = PackedFloat32Array(0, 0.349845, 0.640867, 1)
+colors = PackedColorArray(0.568627, 0.568627, 0.568627, 0, 0, 0, 0, 0.67451, 0, 0, 0, 0.713726, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ilrlx"]
+gradient = SubResource("Gradient_dhee6")
+fill_from = Vector2(1, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hi6d2"]
+texture = SubResource("GradientTexture2D_ilrlx")
+
+[sub_resource type="Environment" id="Environment_ibsdm"]
+background_mode = 3
+glow_enabled = true
+glow_blend_mode = 1
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("horisontal", "spiral")]
+script = ExtResource("1_2xv1t")
+horisontal = [NodePath("CanvasLayer/HRow"), null]
+spiral = [NodePath("CanvasLayer/SpiralUI"), NodePath("CanvasLayer/CursorSpiral")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BG" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BG"]
+layout_mode = 2
+texture = ExtResource("1_wuetl")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="CanvasLayer/BG/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_hi6d2")
+
+[node name="HRow" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 581.0
+offset_right = 15045.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("2_rh2m5")
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HRow"]
+layout_mode = 2
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="EchoCard" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("3_j426l")]
+layout_mode = 2
+
+[node name="EchoCard2" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("4_gx2ab")]
+layout_mode = 2
+
+[node name="EchoCard3" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("5_3odn0")]
+layout_mode = 2
+
+[node name="EchoCard4" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("6_uahru")]
+layout_mode = 2
+
+[node name="EchoCard5" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("7_qgnhf")]
+layout_mode = 2
+
+[node name="EchoCard6" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("8_xnxb8")]
+layout_mode = 2
+
+[node name="EchoCard7" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("9_hl5po")]
+layout_mode = 2
+
+[node name="EchoCard8" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("10_rg0fh")]
+layout_mode = 2
+
+[node name="EchoCard9" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("11_q2qbc")]
+layout_mode = 2
+
+[node name="EchoCard10" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("12_mov1x")]
+layout_mode = 2
+
+[node name="EchoCard11" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("13_64215")]
+layout_mode = 2
+
+[node name="EchoCard12" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("14_2jwlu")]
+layout_mode = 2
+
+[node name="EchoCard13" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("15_qnpk8")]
+layout_mode = 2
+
+[node name="EchoCard14" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("16_k73ri")]
+layout_mode = 2
+
+[node name="EchoCard15" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("17_l1pax")]
+layout_mode = 2
+
+[node name="EchoCard16" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("18_is3je")]
+layout_mode = 2
+
+[node name="EchoCard17" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("19_oag6s")]
+layout_mode = 2
+
+[node name="EchoCard18" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("20_ec3bn")]
+layout_mode = 2
+
+[node name="EchoCard19" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("21_h37mh")]
+layout_mode = 2
+
+[node name="EchoCard20" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("22_45o7c")]
+layout_mode = 2
+
+[node name="EchoCard21" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("23_n5es1")]
+layout_mode = 2
+
+[node name="EchoCard22" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("24_daace")]
+layout_mode = 2
+
+[node name="EchoCard23" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("25_hp5wa")]
+layout_mode = 2
+
+[node name="EchoCard24" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("26_d7sm4")]
+layout_mode = 2
+
+[node name="EchoCard25" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("27_nvyl2")]
+layout_mode = 2
+
+[node name="EchoCard26" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("28_3b6ni")]
+layout_mode = 2
+
+[node name="EchoCard27" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("29_canld")]
+layout_mode = 2
+
+[node name="EchoCard28" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("30_64alq")]
+layout_mode = 2
+
+[node name="EchoCard29" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("31_dlh8d")]
+layout_mode = 2
+
+[node name="EchoCard30" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("32_56adi")]
+layout_mode = 2
+
+[node name="EchoCard31" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("33_nvhdg")]
+layout_mode = 2
+
+[node name="EchoCard32" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("34_i8y5m")]
+layout_mode = 2
+
+[node name="EchoCard33" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("35_bv8o2")]
+layout_mode = 2
+
+[node name="EchoCard34" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("36_tpbhi")]
+layout_mode = 2
+
+[node name="EchoCard35" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("37_62fxg")]
+layout_mode = 2
+
+[node name="EchoCard36" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("38_ceduv")]
+layout_mode = 2
+
+[node name="EchoCard37" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("39_f2c7n")]
+layout_mode = 2
+
+[node name="EchoCard38" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("40_7s4a5")]
+layout_mode = 2
+
+[node name="EchoCard39" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("41_kyd3f")]
+layout_mode = 2
+
+[node name="EchoCard40" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("42_bwob8")]
+layout_mode = 2
+
+[node name="EchoCard41" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("43_c720c")]
+layout_mode = 2
+
+[node name="EchoCard42" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("44_wwu50")]
+layout_mode = 2
+
+[node name="EchoCard43" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("45_gp6ew")]
+layout_mode = 2
+
+[node name="EchoCard44" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("46_0vdvx")]
+layout_mode = 2
+
+[node name="EchoCard45" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("47_y081v")]
+layout_mode = 2
+
+[node name="EchoCard46" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("48_pp5k1")]
+layout_mode = 2
+
+[node name="EchoCard47" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("49_j3a72")]
+layout_mode = 2
+
+[node name="EchoCard48" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("50_4ca3j")]
+layout_mode = 2
+
+[node name="EchoCard49" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("51_l0eb5")]
+layout_mode = 2
+
+[node name="EchoCard50" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("52_8vfl3")]
+layout_mode = 2
+
+[node name="EchoCard51" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("53_m8ewy")]
+layout_mode = 2
+
+[node name="EchoCard52" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("54_k63ds")]
+layout_mode = 2
+
+[node name="EchoCard53" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("55_iprp0")]
+layout_mode = 2
+
+[node name="EchoCard54" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("56_ptvoi")]
+layout_mode = 2
+
+[node name="EchoCard55" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("57_lcovl")]
+layout_mode = 2
+
+[node name="EchoCard56" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("58_f3vi1")]
+layout_mode = 2
+
+[node name="EchoCard57" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("59_x0vkp")]
+layout_mode = 2
+
+[node name="EchoCard58" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("60_q5t8j")]
+layout_mode = 2
+
+[node name="EchoCard59" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("61_6dyog")]
+layout_mode = 2
+
+[node name="EchoCard60" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("62_e4odk")]
+layout_mode = 2
+
+[node name="EchoCard61" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("63_fp5cc")]
+layout_mode = 2
+
+[node name="EchoCard62" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("64_cwvb7")]
+layout_mode = 2
+
+[node name="EchoCard63" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("65_wmteq")]
+layout_mode = 2
+
+[node name="EchoCard64" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("66_r32nx")]
+layout_mode = 2
+
+[node name="EchoCard65" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("67_64x01")]
+layout_mode = 2
+
+[node name="EchoCard66" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("68_btqtk")]
+layout_mode = 2
+
+[node name="EchoCard67" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("69_r722f")]
+layout_mode = 2
+
+[node name="EchoCard68" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("70_4tx55")]
+layout_mode = 2
+
+[node name="EchoCard69" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("71_o4yi1")]
+layout_mode = 2
+
+[node name="EchoCard70" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("72_uacyu")]
+layout_mode = 2
+
+[node name="EchoCard71" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("73_jhhtw")]
+layout_mode = 2
+
+[node name="EchoCard72" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("74_a7xps")]
+layout_mode = 2
+
+[node name="EchoCard73" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("75_lln8q")]
+layout_mode = 2
+
+[node name="EchoCard74" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("76_j7atm")]
+layout_mode = 2
+
+[node name="EchoCard75" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("77_600rf")]
+layout_mode = 2
+
+[node name="EchoCard76" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("78_2kf1h")]
+layout_mode = 2
+
+[node name="EchoCard77" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("79_6m574")]
+layout_mode = 2
+
+[node name="EchoCard78" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("80_v47vr")]
+layout_mode = 2
+
+[node name="EchoCard79" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("81_52xn3")]
+layout_mode = 2
+
+[node name="EchoCard80" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("82_nggr1")]
+layout_mode = 2
+
+[node name="EchoCard81" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("83_lw77g")]
+layout_mode = 2
+
+[node name="EchoCard82" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("84_uwsc4")]
+layout_mode = 2
+
+[node name="EchoCard83" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("85_u4ono")]
+layout_mode = 2
+
+[node name="EchoCard84" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("86_n6e4g")]
+layout_mode = 2
+
+[node name="EchoCard85" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("87_304wt")]
+layout_mode = 2
+
+[node name="EchoCard86" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("88_a4v6p")]
+layout_mode = 2
+
+[node name="EchoCard87" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("89_3gixt")]
+layout_mode = 2
+
+[node name="EchoCard88" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("90_17osu")]
+layout_mode = 2
+
+[node name="EchoCard89" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("91_abmwo")]
+layout_mode = 2
+
+[node name="EchoCard90" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("92_e80d8")]
+layout_mode = 2
+
+[node name="EchoCard91" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("93_dtd2s")]
+layout_mode = 2
+
+[node name="EchoCard92" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("94_t4n3y")]
+layout_mode = 2
+
+[node name="EchoCard93" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("95_4tkwg")]
+layout_mode = 2
+
+[node name="EchoCard94" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("96_jhc3u")]
+layout_mode = 2
+
+[node name="EchoCard95" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("97_mf0pp")]
+layout_mode = 2
+
+[node name="EchoCard96" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("98_najbn")]
+layout_mode = 2
+
+[node name="EchoCard97" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("99_xug1p")]
+layout_mode = 2
+
+[node name="EchoCard98" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("100_wf3bs")]
+layout_mode = 2
+
+[node name="EchoCard99" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("101_ykbry")]
+layout_mode = 2
+
+[node name="EchoCard100" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("102_5xjs6")]
+layout_mode = 2
+
+[node name="EchoCard101" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("103_nud38")]
+layout_mode = 2
+
+[node name="EchoCard102" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("104_w5d6t")]
+layout_mode = 2
+
+[node name="EchoCard103" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("105_58j1f")]
+layout_mode = 2
+
+[node name="EchoCard104" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("106_hips6")]
+layout_mode = 2
+
+[node name="EchoCard105" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("107_geq15")]
+layout_mode = 2
+
+[node name="EchoCard106" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("108_ebnu7")]
+layout_mode = 2
+
+[node name="EchoCard107" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("109_qvdty")]
+layout_mode = 2
+
+[node name="EchoCard108" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("110_cvd2b")]
+layout_mode = 2
+
+[node name="EchoCard109" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("111_oifrx")]
+layout_mode = 2
+
+[node name="EchoCard110" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("112_vmt86")]
+layout_mode = 2
+
+[node name="EchoCard111" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("113_nhuup")]
+layout_mode = 2
+
+[node name="EchoCard112" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("114_8xo6f")]
+layout_mode = 2
+
+[node name="EchoCard113" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("115_dfl0r")]
+layout_mode = 2
+
+[node name="EchoCard114" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("116_xxcvj")]
+layout_mode = 2
+
+[node name="EchoCard115" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("117_ng0rl")]
+layout_mode = 2
+
+[node name="EchoCard116" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("118_swvyl")]
+layout_mode = 2
+
+[node name="EchoCard117" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("119_aq6ey")]
+layout_mode = 2
+
+[node name="EchoCard118" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("120_w4tn5")]
+layout_mode = 2
+
+[node name="EchoCard119" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("121_gww4h")]
+layout_mode = 2
+
+[node name="EchoCard120" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("122_h7ayj")]
+layout_mode = 2
+
+[node name="EchoCard121" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("123_hiy6n")]
+layout_mode = 2
+
+[node name="EchoCard122" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("124_gl3i7")]
+layout_mode = 2
+
+[node name="EchoCard123" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("125_qi2hl")]
+layout_mode = 2
+
+[node name="EchoCard124" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("126_r8okl")]
+layout_mode = 2
+
+[node name="EchoCard125" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("127_6gxv7")]
+layout_mode = 2
+
+[node name="EchoCard126" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("128_1sr0h")]
+layout_mode = 2
+
+[node name="EchoCard127" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("129_vycpe")]
+layout_mode = 2
+
+[node name="Cursor" parent="CanvasLayer" instance=ExtResource("3_qldjs")]
+offset_left = -65.0
+offset_top = -85.0
+offset_right = 65.0
+offset_bottom = 85.0
+
+[node name="CursorSpiral" type="Control" parent="CanvasLayer" node_paths=PackedStringArray("spiral")]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("131_blh5b")
+spiral = NodePath("../SpiralUI")
+
+[node name="CursorFloat" parent="CanvasLayer/CursorSpiral" instance=ExtResource("3_qldjs")]
+modulate = Color(0.350052, 0.74052, 0.865251, 0.8)
+layout_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CursorInt" parent="CanvasLayer/CursorSpiral" instance=ExtResource("3_qldjs")]
+layout_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="SpiralUI" type="Control" parent="CanvasLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("131_7h75x")
+std_radius = null
+delta_radius = null
+echos_per_revolution = null
+
+[node name="EchoCard" parent="CanvasLayer/SpiralUI" instance=ExtResource("3_j426l")]
+layout_mode = 0
+
+[node name="EchoCard2" parent="CanvasLayer/SpiralUI" instance=ExtResource("4_gx2ab")]
+layout_mode = 0
+
+[node name="EchoCard3" parent="CanvasLayer/SpiralUI" instance=ExtResource("5_3odn0")]
+layout_mode = 0
+
+[node name="EchoCard4" parent="CanvasLayer/SpiralUI" instance=ExtResource("6_uahru")]
+layout_mode = 0
+
+[node name="EchoCard5" parent="CanvasLayer/SpiralUI" instance=ExtResource("7_qgnhf")]
+layout_mode = 0
+
+[node name="EchoCard6" parent="CanvasLayer/SpiralUI" instance=ExtResource("8_xnxb8")]
+layout_mode = 0
+
+[node name="EchoCard7" parent="CanvasLayer/SpiralUI" instance=ExtResource("9_hl5po")]
+layout_mode = 0
+
+[node name="EchoCard8" parent="CanvasLayer/SpiralUI" instance=ExtResource("10_rg0fh")]
+layout_mode = 0
+
+[node name="EchoCard9" parent="CanvasLayer/SpiralUI" instance=ExtResource("11_q2qbc")]
+layout_mode = 0
+
+[node name="EchoCard10" parent="CanvasLayer/SpiralUI" instance=ExtResource("12_mov1x")]
+layout_mode = 0
+
+[node name="EchoCard11" parent="CanvasLayer/SpiralUI" instance=ExtResource("13_64215")]
+layout_mode = 0
+
+[node name="EchoCard12" parent="CanvasLayer/SpiralUI" instance=ExtResource("14_2jwlu")]
+layout_mode = 0
+
+[node name="EchoCard13" parent="CanvasLayer/SpiralUI" instance=ExtResource("15_qnpk8")]
+layout_mode = 0
+
+[node name="EchoCard14" parent="CanvasLayer/SpiralUI" instance=ExtResource("16_k73ri")]
+layout_mode = 0
+
+[node name="EchoCard15" parent="CanvasLayer/SpiralUI" instance=ExtResource("17_l1pax")]
+layout_mode = 0
+
+[node name="EchoCard16" parent="CanvasLayer/SpiralUI" instance=ExtResource("18_is3je")]
+layout_mode = 0
+
+[node name="EchoCard17" parent="CanvasLayer/SpiralUI" instance=ExtResource("19_oag6s")]
+layout_mode = 0
+
+[node name="EchoCard18" parent="CanvasLayer/SpiralUI" instance=ExtResource("20_ec3bn")]
+layout_mode = 0
+
+[node name="EchoCard19" parent="CanvasLayer/SpiralUI" instance=ExtResource("21_h37mh")]
+layout_mode = 0
+
+[node name="EchoCard20" parent="CanvasLayer/SpiralUI" instance=ExtResource("22_45o7c")]
+layout_mode = 0
+
+[node name="EchoCard21" parent="CanvasLayer/SpiralUI" instance=ExtResource("23_n5es1")]
+layout_mode = 0
+
+[node name="EchoCard22" parent="CanvasLayer/SpiralUI" instance=ExtResource("24_daace")]
+layout_mode = 0
+
+[node name="EchoCard23" parent="CanvasLayer/SpiralUI" instance=ExtResource("25_hp5wa")]
+layout_mode = 0
+
+[node name="EchoCard24" parent="CanvasLayer/SpiralUI" instance=ExtResource("26_d7sm4")]
+layout_mode = 0
+
+[node name="EchoCard25" parent="CanvasLayer/SpiralUI" instance=ExtResource("27_nvyl2")]
+layout_mode = 0
+
+[node name="EchoCard26" parent="CanvasLayer/SpiralUI" instance=ExtResource("28_3b6ni")]
+layout_mode = 0
+
+[node name="EchoCard27" parent="CanvasLayer/SpiralUI" instance=ExtResource("29_canld")]
+layout_mode = 0
+
+[node name="EchoCard28" parent="CanvasLayer/SpiralUI" instance=ExtResource("30_64alq")]
+layout_mode = 0
+
+[node name="EchoCard29" parent="CanvasLayer/SpiralUI" instance=ExtResource("31_dlh8d")]
+layout_mode = 0
+
+[node name="EchoCard30" parent="CanvasLayer/SpiralUI" instance=ExtResource("32_56adi")]
+layout_mode = 0
+
+[node name="EchoCard31" parent="CanvasLayer/SpiralUI" instance=ExtResource("33_nvhdg")]
+layout_mode = 0
+
+[node name="EchoCard32" parent="CanvasLayer/SpiralUI" instance=ExtResource("34_i8y5m")]
+layout_mode = 0
+
+[node name="EchoCard33" parent="CanvasLayer/SpiralUI" instance=ExtResource("35_bv8o2")]
+layout_mode = 0
+
+[node name="EchoCard34" parent="CanvasLayer/SpiralUI" instance=ExtResource("36_tpbhi")]
+layout_mode = 0
+
+[node name="EchoCard35" parent="CanvasLayer/SpiralUI" instance=ExtResource("37_62fxg")]
+layout_mode = 0
+
+[node name="EchoCard36" parent="CanvasLayer/SpiralUI" instance=ExtResource("38_ceduv")]
+layout_mode = 0
+
+[node name="EchoCard37" parent="CanvasLayer/SpiralUI" instance=ExtResource("39_f2c7n")]
+layout_mode = 0
+
+[node name="EchoCard38" parent="CanvasLayer/SpiralUI" instance=ExtResource("40_7s4a5")]
+layout_mode = 0
+
+[node name="EchoCard39" parent="CanvasLayer/SpiralUI" instance=ExtResource("41_kyd3f")]
+layout_mode = 0
+
+[node name="EchoCard40" parent="CanvasLayer/SpiralUI" instance=ExtResource("42_bwob8")]
+layout_mode = 0
+
+[node name="EchoCard41" parent="CanvasLayer/SpiralUI" instance=ExtResource("43_c720c")]
+layout_mode = 0
+
+[node name="EchoCard42" parent="CanvasLayer/SpiralUI" instance=ExtResource("44_wwu50")]
+layout_mode = 0
+
+[node name="EchoCard43" parent="CanvasLayer/SpiralUI" instance=ExtResource("45_gp6ew")]
+layout_mode = 0
+
+[node name="EchoCard44" parent="CanvasLayer/SpiralUI" instance=ExtResource("46_0vdvx")]
+layout_mode = 0
+
+[node name="EchoCard45" parent="CanvasLayer/SpiralUI" instance=ExtResource("47_y081v")]
+layout_mode = 0
+
+[node name="EchoCard46" parent="CanvasLayer/SpiralUI" instance=ExtResource("48_pp5k1")]
+layout_mode = 0
+
+[node name="EchoCard47" parent="CanvasLayer/SpiralUI" instance=ExtResource("49_j3a72")]
+layout_mode = 0
+
+[node name="EchoCard48" parent="CanvasLayer/SpiralUI" instance=ExtResource("50_4ca3j")]
+layout_mode = 0
+
+[node name="EchoCard49" parent="CanvasLayer/SpiralUI" instance=ExtResource("51_l0eb5")]
+layout_mode = 0
+
+[node name="EchoCard50" parent="CanvasLayer/SpiralUI" instance=ExtResource("52_8vfl3")]
+layout_mode = 0
+
+[node name="EchoCard51" parent="CanvasLayer/SpiralUI" instance=ExtResource("53_m8ewy")]
+layout_mode = 0
+
+[node name="EchoCard52" parent="CanvasLayer/SpiralUI" instance=ExtResource("54_k63ds")]
+layout_mode = 0
+
+[node name="EchoCard53" parent="CanvasLayer/SpiralUI" instance=ExtResource("55_iprp0")]
+layout_mode = 0
+
+[node name="EchoCard54" parent="CanvasLayer/SpiralUI" instance=ExtResource("56_ptvoi")]
+layout_mode = 0
+
+[node name="EchoCard55" parent="CanvasLayer/SpiralUI" instance=ExtResource("57_lcovl")]
+layout_mode = 0
+
+[node name="EchoCard56" parent="CanvasLayer/SpiralUI" instance=ExtResource("58_f3vi1")]
+layout_mode = 0
+
+[node name="EchoCard57" parent="CanvasLayer/SpiralUI" instance=ExtResource("59_x0vkp")]
+layout_mode = 0
+
+[node name="EchoCard58" parent="CanvasLayer/SpiralUI" instance=ExtResource("60_q5t8j")]
+layout_mode = 0
+
+[node name="EchoCard59" parent="CanvasLayer/SpiralUI" instance=ExtResource("61_6dyog")]
+layout_mode = 0
+
+[node name="EchoCard60" parent="CanvasLayer/SpiralUI" instance=ExtResource("62_e4odk")]
+layout_mode = 0
+
+[node name="EchoCard61" parent="CanvasLayer/SpiralUI" instance=ExtResource("63_fp5cc")]
+layout_mode = 0
+
+[node name="EchoCard62" parent="CanvasLayer/SpiralUI" instance=ExtResource("64_cwvb7")]
+layout_mode = 0
+
+[node name="EchoCard63" parent="CanvasLayer/SpiralUI" instance=ExtResource("65_wmteq")]
+layout_mode = 0
+
+[node name="EchoCard64" parent="CanvasLayer/SpiralUI" instance=ExtResource("66_r32nx")]
+layout_mode = 0
+
+[node name="EchoCard65" parent="CanvasLayer/SpiralUI" instance=ExtResource("67_64x01")]
+layout_mode = 0
+
+[node name="EchoCard66" parent="CanvasLayer/SpiralUI" instance=ExtResource("68_btqtk")]
+layout_mode = 0
+
+[node name="EchoCard67" parent="CanvasLayer/SpiralUI" instance=ExtResource("69_r722f")]
+layout_mode = 0
+
+[node name="EchoCard68" parent="CanvasLayer/SpiralUI" instance=ExtResource("70_4tx55")]
+layout_mode = 0
+
+[node name="EchoCard69" parent="CanvasLayer/SpiralUI" instance=ExtResource("71_o4yi1")]
+layout_mode = 0
+
+[node name="EchoCard70" parent="CanvasLayer/SpiralUI" instance=ExtResource("72_uacyu")]
+layout_mode = 0
+
+[node name="EchoCard71" parent="CanvasLayer/SpiralUI" instance=ExtResource("73_jhhtw")]
+layout_mode = 0
+
+[node name="EchoCard72" parent="CanvasLayer/SpiralUI" instance=ExtResource("74_a7xps")]
+layout_mode = 0
+
+[node name="EchoCard73" parent="CanvasLayer/SpiralUI" instance=ExtResource("75_lln8q")]
+layout_mode = 0
+
+[node name="EchoCard74" parent="CanvasLayer/SpiralUI" instance=ExtResource("76_j7atm")]
+layout_mode = 0
+
+[node name="EchoCard75" parent="CanvasLayer/SpiralUI" instance=ExtResource("77_600rf")]
+layout_mode = 0
+
+[node name="EchoCard76" parent="CanvasLayer/SpiralUI" instance=ExtResource("78_2kf1h")]
+layout_mode = 0
+
+[node name="EchoCard77" parent="CanvasLayer/SpiralUI" instance=ExtResource("79_6m574")]
+layout_mode = 0
+
+[node name="EchoCard78" parent="CanvasLayer/SpiralUI" instance=ExtResource("80_v47vr")]
+layout_mode = 0
+
+[node name="EchoCard79" parent="CanvasLayer/SpiralUI" instance=ExtResource("81_52xn3")]
+layout_mode = 0
+
+[node name="EchoCard80" parent="CanvasLayer/SpiralUI" instance=ExtResource("82_nggr1")]
+layout_mode = 0
+
+[node name="EchoCard81" parent="CanvasLayer/SpiralUI" instance=ExtResource("83_lw77g")]
+layout_mode = 0
+
+[node name="EchoCard82" parent="CanvasLayer/SpiralUI" instance=ExtResource("84_uwsc4")]
+layout_mode = 0
+
+[node name="EchoCard83" parent="CanvasLayer/SpiralUI" instance=ExtResource("85_u4ono")]
+layout_mode = 0
+
+[node name="EchoCard84" parent="CanvasLayer/SpiralUI" instance=ExtResource("86_n6e4g")]
+layout_mode = 0
+
+[node name="EchoCard85" parent="CanvasLayer/SpiralUI" instance=ExtResource("87_304wt")]
+layout_mode = 0
+
+[node name="EchoCard86" parent="CanvasLayer/SpiralUI" instance=ExtResource("88_a4v6p")]
+layout_mode = 0
+
+[node name="EchoCard87" parent="CanvasLayer/SpiralUI" instance=ExtResource("89_3gixt")]
+layout_mode = 0
+
+[node name="EchoCard88" parent="CanvasLayer/SpiralUI" instance=ExtResource("90_17osu")]
+layout_mode = 0
+
+[node name="EchoCard89" parent="CanvasLayer/SpiralUI" instance=ExtResource("91_abmwo")]
+layout_mode = 0
+
+[node name="EchoCard90" parent="CanvasLayer/SpiralUI" instance=ExtResource("92_e80d8")]
+layout_mode = 0
+
+[node name="EchoCard91" parent="CanvasLayer/SpiralUI" instance=ExtResource("93_dtd2s")]
+layout_mode = 0
+
+[node name="EchoCard92" parent="CanvasLayer/SpiralUI" instance=ExtResource("94_t4n3y")]
+layout_mode = 0
+
+[node name="EchoCard93" parent="CanvasLayer/SpiralUI" instance=ExtResource("95_4tkwg")]
+layout_mode = 0
+
+[node name="EchoCard94" parent="CanvasLayer/SpiralUI" instance=ExtResource("96_jhc3u")]
+layout_mode = 0
+
+[node name="EchoCard95" parent="CanvasLayer/SpiralUI" instance=ExtResource("97_mf0pp")]
+layout_mode = 0
+
+[node name="EchoCard96" parent="CanvasLayer/SpiralUI" instance=ExtResource("98_najbn")]
+layout_mode = 0
+
+[node name="EchoCard97" parent="CanvasLayer/SpiralUI" instance=ExtResource("99_xug1p")]
+layout_mode = 0
+
+[node name="EchoCard98" parent="CanvasLayer/SpiralUI" instance=ExtResource("100_wf3bs")]
+layout_mode = 0
+
+[node name="EchoCard99" parent="CanvasLayer/SpiralUI" instance=ExtResource("101_ykbry")]
+layout_mode = 0
+
+[node name="EchoCard100" parent="CanvasLayer/SpiralUI" instance=ExtResource("102_5xjs6")]
+layout_mode = 0
+
+[node name="EchoCard101" parent="CanvasLayer/SpiralUI" instance=ExtResource("103_nud38")]
+layout_mode = 0
+
+[node name="EchoCard102" parent="CanvasLayer/SpiralUI" instance=ExtResource("104_w5d6t")]
+layout_mode = 0
+
+[node name="EchoCard103" parent="CanvasLayer/SpiralUI" instance=ExtResource("105_58j1f")]
+layout_mode = 0
+
+[node name="EchoCard104" parent="CanvasLayer/SpiralUI" instance=ExtResource("106_hips6")]
+layout_mode = 0
+
+[node name="EchoCard105" parent="CanvasLayer/SpiralUI" instance=ExtResource("107_geq15")]
+layout_mode = 0
+
+[node name="EchoCard106" parent="CanvasLayer/SpiralUI" instance=ExtResource("108_ebnu7")]
+layout_mode = 0
+
+[node name="EchoCard107" parent="CanvasLayer/SpiralUI" instance=ExtResource("109_qvdty")]
+layout_mode = 0
+
+[node name="EchoCard108" parent="CanvasLayer/SpiralUI" instance=ExtResource("110_cvd2b")]
+layout_mode = 0
+
+[node name="EchoCard109" parent="CanvasLayer/SpiralUI" instance=ExtResource("111_oifrx")]
+layout_mode = 0
+
+[node name="EchoCard110" parent="CanvasLayer/SpiralUI" instance=ExtResource("112_vmt86")]
+layout_mode = 0
+
+[node name="EchoCard111" parent="CanvasLayer/SpiralUI" instance=ExtResource("113_nhuup")]
+layout_mode = 0
+
+[node name="EchoCard112" parent="CanvasLayer/SpiralUI" instance=ExtResource("114_8xo6f")]
+layout_mode = 0
+
+[node name="EchoCard113" parent="CanvasLayer/SpiralUI" instance=ExtResource("115_dfl0r")]
+layout_mode = 0
+
+[node name="EchoCard114" parent="CanvasLayer/SpiralUI" instance=ExtResource("116_xxcvj")]
+layout_mode = 0
+
+[node name="EchoCard115" parent="CanvasLayer/SpiralUI" instance=ExtResource("117_ng0rl")]
+layout_mode = 0
+
+[node name="EchoCard116" parent="CanvasLayer/SpiralUI" instance=ExtResource("118_swvyl")]
+layout_mode = 0
+
+[node name="EchoCard117" parent="CanvasLayer/SpiralUI" instance=ExtResource("119_aq6ey")]
+layout_mode = 0
+
+[node name="EchoCard118" parent="CanvasLayer/SpiralUI" instance=ExtResource("120_w4tn5")]
+layout_mode = 0
+
+[node name="EchoCard119" parent="CanvasLayer/SpiralUI" instance=ExtResource("121_gww4h")]
+layout_mode = 0
+
+[node name="EchoCard120" parent="CanvasLayer/SpiralUI" instance=ExtResource("122_h7ayj")]
+layout_mode = 0
+
+[node name="EchoCard121" parent="CanvasLayer/SpiralUI" instance=ExtResource("123_hiy6n")]
+layout_mode = 0
+
+[node name="EchoCard122" parent="CanvasLayer/SpiralUI" instance=ExtResource("124_gl3i7")]
+layout_mode = 0
+
+[node name="EchoCard123" parent="CanvasLayer/SpiralUI" instance=ExtResource("125_qi2hl")]
+layout_mode = 0
+
+[node name="EchoCard124" parent="CanvasLayer/SpiralUI" instance=ExtResource("126_r8okl")]
+layout_mode = 0
+
+[node name="EchoCard125" parent="CanvasLayer/SpiralUI" instance=ExtResource("127_6gxv7")]
+layout_mode = 0
+
+[node name="EchoCard126" parent="CanvasLayer/SpiralUI" instance=ExtResource("128_1sr0h")]
+layout_mode = 0
+
+[node name="EchoCard127" parent="CanvasLayer/SpiralUI" instance=ExtResource("129_vycpe")]
+layout_mode = 0
+
+[node name="FakeUI" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/FakeUI"]
+layout_mode = 2
+texture = ExtResource("4_76ssr")
+
+[node name="VisualizeUI" parent="CanvasLayer" instance=ExtResource("132_jmclc")]
+offset_top = -179.0
+offset_right = 188.0
+metadata/_edit_group_ = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ibsdm")

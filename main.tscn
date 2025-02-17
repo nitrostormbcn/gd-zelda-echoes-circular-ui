@@ -1,144 +1,271 @@
-[gd_scene load_steps=140 format=3 uid="uid://cjtq5vj577q4s"]
+[gd_scene load_steps=268 format=3 uid="uid://cjtq5vj577q4s"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_2xv1t"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_2xv1t"]
 [ext_resource type="Texture2D" uid="uid://bladi7ng45bm1" path="res://images/bg_blur.png" id="1_wuetl"]
-[ext_resource type="Script" path="res://h_row.gd" id="2_rh2m5"]
-[ext_resource type="PackedScene" uid="uid://dyhp2xmq7wvx7" path="res://echo_scenes/Albatrawl_Echo.tscn" id="3_j426l"]
-[ext_resource type="PackedScene" uid="uid://cvuffnqjgmmj5" path="res://cursor.tscn" id="3_qldjs"]
+[ext_resource type="Script" path="res://scripts/h_row.gd" id="2_rh2m5"]
+[ext_resource type="PackedScene" uid="uid://bb021w7f3l3nt" path="res://echo_scenes/Albatrawl_Echo.tscn" id="3_j426l"]
+[ext_resource type="PackedScene" uid="uid://cvuffnqjgmmj5" path="res://scenes/cursor.tscn" id="3_qldjs"]
 [ext_resource type="Texture2D" uid="uid://ctkngebfw8hct" path="res://images/fullUI.png" id="4_76ssr"]
-[ext_resource type="PackedScene" uid="uid://cympt2v5010o0" path="res://echo_scenes/Ancient_Orb_Echo.tscn" id="4_gx2ab"]
-[ext_resource type="PackedScene" uid="uid://c2wad7q7gi5qf" path="res://echo_scenes/Armos_Echo.tscn" id="5_3odn0"]
-[ext_resource type="PackedScene" uid="uid://br2o4q02itqw4" path="res://echo_scenes/Aruroda_Echo.tscn" id="6_uahru"]
-[ext_resource type="PackedScene" uid="uid://7ye0586xb3ok" path="res://echo_scenes/Baby_Gohma_Echo.tscn" id="7_qgnhf"]
-[ext_resource type="PackedScene" uid="uid://ds3rb88txf4gv" path="res://echo_scenes/Ball_and_Chain_Trooper_Echo.tscn" id="8_xnxb8"]
-[ext_resource type="PackedScene" uid="uid://b7c1668gvg1nq" path="res://echo_scenes/Beakon_Echo.tscn" id="9_hl5po"]
-[ext_resource type="PackedScene" uid="uid://cx3eypy1306qv" path="res://echo_scenes/Beamos_Echo.tscn" id="10_rg0fh"]
-[ext_resource type="PackedScene" uid="uid://cevbog50krhv5" path="res://echo_scenes/Beetle_Echo.tscn" id="11_q2qbc"]
-[ext_resource type="PackedScene" uid="uid://ch4yvaq3du1ah" path="res://echo_scenes/Beetle_Mound_Echo.tscn" id="12_mov1x"]
-[ext_resource type="PackedScene" uid="uid://dtv0g8ogdg6l" path="res://echo_scenes/Bio_Deku_Baba_Echo.tscn" id="13_64215"]
-[ext_resource type="PackedScene" uid="uid://dfb3oxc041efn" path="res://echo_scenes/Biri_Echo.tscn" id="14_2jwlu"]
-[ext_resource type="PackedScene" uid="uid://b2epf07j41vn" path="res://echo_scenes/Bombfish_Echo.tscn" id="15_qnpk8"]
-[ext_resource type="PackedScene" uid="uid://dxab2uqny5r28" path="res://echo_scenes/Boomerang_Boarblin_Echo.tscn" id="16_k73ri"]
-[ext_resource type="PackedScene" uid="uid://b5tx3raqvmfxo" path="res://echo_scenes/Boomerang_Boarblin_Lv_2_Echo.tscn" id="17_l1pax"]
-[ext_resource type="PackedScene" uid="uid://b8ex76e5chtf1" path="res://echo_scenes/Boulder_Echo.tscn" id="18_is3je"]
-[ext_resource type="PackedScene" uid="uid://d3upu1ges4dcj" path="res://echo_scenes/Brazier_Echo.tscn" id="19_oag6s"]
-[ext_resource type="PackedScene" uid="uid://citb11olbplju" path="res://echo_scenes/Buzz_Blob_Echo.tscn" id="20_ec3bn"]
-[ext_resource type="PackedScene" uid="uid://cm5t6xgw7plg6" path="res://echo_scenes/Caromadillo_Echo.tscn" id="21_h37mh"]
-[ext_resource type="PackedScene" uid="uid://diqaftjcpe404" path="res://echo_scenes/Caromadillo_Lv_2_Echo.tscn" id="22_45o7c"]
-[ext_resource type="PackedScene" uid="uid://dnvcp0pcq6yfh" path="res://echo_scenes/Carrot_Echo.tscn" id="23_n5es1"]
-[ext_resource type="PackedScene" uid="uid://d2bnub4ik2ykw" path="res://echo_scenes/Cat_Statue_Echo.tscn" id="24_daace"]
-[ext_resource type="PackedScene" uid="uid://bbkupwo6afeku" path="res://echo_scenes/Chompfin_Echo.tscn" id="25_hp5wa"]
-[ext_resource type="PackedScene" uid="uid://du1a6rphjiqtu" path="res://echo_scenes/Cloud_Echo.tscn" id="26_d7sm4"]
-[ext_resource type="PackedScene" uid="uid://boqn8juthwlqq" path="res://echo_scenes/Club_Boarblin_Echo.tscn" id="27_nvyl2"]
-[ext_resource type="PackedScene" uid="uid://bs7um6ddp3x7m" path="res://echo_scenes/Club_Boarblin_Lv_2_Echo.tscn" id="28_3b6ni"]
-[ext_resource type="PackedScene" uid="uid://dneiad4o06aqq" path="res://echo_scenes/Crawltula_Echo.tscn" id="29_canld"]
-[ext_resource type="PackedScene" uid="uid://s7q5oo7gmf1s" path="res://echo_scenes/Crow_Echo.tscn" id="30_64alq"]
-[ext_resource type="PackedScene" uid="uid://bex4jdrur1gcr" path="res://echo_scenes/Darknut_Echo.tscn" id="31_dlh8d"]
-[ext_resource type="PackedScene" uid="uid://ugj5738w5uwl" path="res://echo_scenes/Darknut_Lv_2_Echo.tscn" id="32_56adi"]
-[ext_resource type="PackedScene" uid="uid://cw46bvvijy6an" path="res://echo_scenes/Darknut_Lv_3_Echo.tscn" id="33_nvhdg"]
-[ext_resource type="PackedScene" uid="uid://bqpjomso40caw" path="res://echo_scenes/Decorative_Shrub_Echo.tscn" id="34_i8y5m"]
-[ext_resource type="PackedScene" uid="uid://4wio8ejeqwbd" path="res://echo_scenes/Deku_Baba_Echo.tscn" id="35_bv8o2"]
-[ext_resource type="PackedScene" uid="uid://p020uyuisnwy" path="res://echo_scenes/Deku_Baba_Lv_2_Echo.tscn" id="36_tpbhi"]
-[ext_resource type="PackedScene" uid="uid://cgivdgcxsdt3q" path="res://echo_scenes/Drippitune_Echo.tscn" id="37_62fxg"]
-[ext_resource type="PackedScene" uid="uid://dg5x0s8ny8ytb" path="res://echo_scenes/Electric_Keese_Echo.tscn" id="38_ceduv"]
-[ext_resource type="PackedScene" uid="uid://daebioljboubh" path="res://echo_scenes/Electric_Wizzrobe_Echo.tscn" id="39_f2c7n"]
-[ext_resource type="PackedScene" uid="uid://nvcvdkr2lk6d" path="res://echo_scenes/Elephant_Statue_Echo.tscn" id="40_7s4a5"]
-[ext_resource type="PackedScene" uid="uid://dnuq1l6t1ia1g" path="res://echo_scenes/Firework_Echo.tscn" id="41_kyd3f"]
-[ext_resource type="PackedScene" uid="uid://cpi8pkw04nhpu" path="res://echo_scenes/Fire_Keese_Echo.tscn" id="42_bwob8"]
-[ext_resource type="PackedScene" uid="uid://lutacxsp6jjk" path="res://echo_scenes/Fire_Octo_Echo.tscn" id="43_c720c"]
-[ext_resource type="PackedScene" uid="uid://dg8hk72rin46s" path="res://echo_scenes/Fire_Wizzrobe_Echo.tscn" id="44_wwu50"]
-[ext_resource type="PackedScene" uid="uid://40qmctjdkinm" path="res://echo_scenes/Flying_Tile_Echo.tscn" id="45_gp6ew"]
-[ext_resource type="PackedScene" uid="uid://bhvaemc7jsh24" path="res://echo_scenes/Freezard_Echo.tscn" id="46_0vdvx"]
-[ext_resource type="PackedScene" uid="uid://bbi5e45bl74he" path="res://echo_scenes/Freeze_Slug_Echo.tscn" id="47_y081v"]
-[ext_resource type="PackedScene" uid="uid://cqhp1ct6633op" path="res://echo_scenes/Gerudo_Pot_Echo.tscn" id="48_pp5k1"]
-[ext_resource type="PackedScene" uid="uid://cvluxsd5h7apj" path="res://echo_scenes/Ghini_Echo.tscn" id="49_j3a72"]
-[ext_resource type="PackedScene" uid="uid://cv1ilq4w5nqsk" path="res://echo_scenes/Ghini_Lv_2_Echo.tscn" id="50_4ca3j"]
-[ext_resource type="PackedScene" uid="uid://bd6nxar0kfh6" path="res://echo_scenes/Ghirro_Echo.tscn" id="51_l0eb5"]
-[ext_resource type="PackedScene" uid="uid://nr6nq44ppa43" path="res://echo_scenes/Giant_Goponga_Flower_Echo.tscn" id="52_8vfl3"]
-[ext_resource type="PackedScene" uid="uid://domnaswa7l8da" path="res://echo_scenes/Gibdo_Echo.tscn" id="53_m8ewy"]
-[ext_resource type="PackedScene" uid="uid://bx2f1weq27cqn" path="res://echo_scenes/Gibdo_Lv_2.tscn" id="54_k63ds"]
-[ext_resource type="PackedScene" uid="uid://csk3bmw4vttfg" path="res://echo_scenes/Goo_Specter_Echo.tscn" id="55_iprp0"]
-[ext_resource type="PackedScene" uid="uid://c04bdptj7b1ta" path="res://echo_scenes/Grilled_Fish_Echo.tscn" id="56_ptvoi"]
-[ext_resource type="PackedScene" uid="uid://d4iwo3cfu5v61" path="res://echo_scenes/Guay_Echo.tscn" id="57_lcovl"]
-[ext_resource type="PackedScene" uid="uid://cfb5sjr8va787" path="res://echo_scenes/Gustmaster_Echo.tscn" id="58_f3vi1"]
-[ext_resource type="PackedScene" uid="uid://cbrutcx2jdstt" path="res://echo_scenes/Hawk_Statue_Echo.tscn" id="59_x0vkp"]
-[ext_resource type="PackedScene" uid="uid://4ofkml41ewq0" path="res://echo_scenes/Hoarder_Echo.tscn" id="60_q5t8j"]
-[ext_resource type="PackedScene" uid="uid://bbfqgvk1qus4b" path="res://echo_scenes/Holmill_Echo.tscn" id="61_6dyog"]
-[ext_resource type="PackedScene" uid="uid://dw7qpuns30pr4" path="res://echo_scenes/Hydrozol_Echo.tscn" id="62_e4odk"]
-[ext_resource type="PackedScene" uid="uid://bv3d3q1lrv5vt" path="res://echo_scenes/Hyrule_Castle_Pot_Echo.tscn" id="63_fp5cc"]
-[ext_resource type="PackedScene" uid="uid://df6bvxcloenbc" path="res://echo_scenes/Ice_Block_Echo.tscn" id="64_cwvb7"]
-[ext_resource type="PackedScene" uid="uid://dhsolrupgfm5d" path="res://echo_scenes/Ice_Keese_Echo.tscn" id="65_wmteq"]
-[ext_resource type="PackedScene" uid="uid://lmjibomd150g" path="res://echo_scenes/Ice_Octo_Echo.tscn" id="66_r32nx"]
-[ext_resource type="PackedScene" uid="uid://d2gah3t78vo3t" path="res://echo_scenes/Ice_Wizzrobe_Echo.tscn" id="67_64x01"]
-[ext_resource type="PackedScene" uid="uid://bhsdyqn3jf328" path="res://echo_scenes/Ignizol_Echo.tscn" id="68_btqtk"]
-[ext_resource type="PackedScene" uid="uid://bmfe0nwvm144n" path="res://echo_scenes/Keese_Echo.tscn" id="69_r722f"]
-[ext_resource type="PackedScene" uid="uid://djrfool33tv17" path="res://echo_scenes/Lava_Rock_Echo.tscn" id="70_4tx55"]
-[ext_resource type="PackedScene" uid="uid://cf6ur3rya0ikq" path="res://echo_scenes/Leever_Echo.tscn" id="71_o4yi1"]
-[ext_resource type="PackedScene" uid="uid://cp3g837v02y2b" path="res://echo_scenes/Lizalfos_%28echoes_of_wisdom%29.tscn" id="72_uacyu"]
-[ext_resource type="PackedScene" uid="uid://crnri53k2oa2a" path="res://echo_scenes/Lizalfos_Lv_2_Echo.tscn" id="73_jhhtw"]
-[ext_resource type="PackedScene" uid="uid://6yrs30mcqpv" path="res://echo_scenes/Lizalfos_Lv_3_Echo.tscn" id="74_a7xps"]
-[ext_resource type="PackedScene" uid="uid://8m0icf54iv1w" path="res://echo_scenes/Lynel_Echo.tscn" id="75_lln8q"]
-[ext_resource type="PackedScene" uid="uid://cupkja75nodl1" path="res://echo_scenes/Meat_Echo.tscn" id="76_j7atm"]
-[ext_resource type="PackedScene" uid="uid://btye1skor4yyw" path="res://echo_scenes/Mini-Moldorm_Echo.tscn" id="77_600rf"]
-[ext_resource type="PackedScene" uid="uid://rgo6xn7k54v" path="res://echo_scenes/Moa_Echo.tscn" id="78_2kf1h"]
-[ext_resource type="PackedScene" uid="uid://cg6iopj2bytuv" path="res://echo_scenes/Mothula_Echo.tscn" id="79_6m574"]
-[ext_resource type="PackedScene" uid="uid://b76xabn5i1oyf" path="res://echo_scenes/Mothula_Lv_2.tscn" id="80_v47vr"]
-[ext_resource type="PackedScene" uid="uid://dvbky8skm3gh5" path="res://echo_scenes/Needlefly_Echo.tscn" id="81_52xn3"]
-[ext_resource type="PackedScene" uid="uid://orn3t7d5hv6j" path="res://echo_scenes/Octorok_Echo.tscn" id="82_nggr1"]
-[ext_resource type="PackedScene" uid="uid://de74dmoesquad" path="res://echo_scenes/Old_Bed_Echo.tscn" id="83_lw77g"]
-[ext_resource type="PackedScene" uid="uid://d3gfdbwmv52q0" path="res://echo_scenes/Pathblade_Echo.tscn" id="84_uwsc4"]
-[ext_resource type="PackedScene" uid="uid://bmf22basfx58q" path="res://echo_scenes/Peahat_Echo.tscn" id="85_u4ono"]
-[ext_resource type="PackedScene" uid="uid://dihg2q27opjgs" path="res://echo_scenes/Piranha_Echo.tscn" id="86_n6e4g"]
-[ext_resource type="PackedScene" uid="uid://bohgmmp5h0tgt" path="res://echo_scenes/Platboom_Echo.tscn" id="87_304wt"]
-[ext_resource type="PackedScene" uid="uid://ddknqn3dbangy" path="res://echo_scenes/Poe_Echo.tscn" id="88_a4v6p"]
-[ext_resource type="PackedScene" uid="uid://ckpowyp7r2cvu" path="res://echo_scenes/Pot_Echo.tscn" id="89_3gixt"]
-[ext_resource type="PackedScene" uid="uid://c4pyi2vkgr23q" path="res://echo_scenes/ReDead_Echo.tscn" id="90_17osu"]
-[ext_resource type="PackedScene" uid="uid://dmfk16cfjfwpy" path="res://echo_scenes/Ribbitune_Echo.tscn" id="91_abmwo"]
-[ext_resource type="PackedScene" uid="uid://clab34hk0wplb" path="res://echo_scenes/Rock_Echo.tscn" id="92_e80d8"]
-[ext_resource type="PackedScene" uid="uid://kkq1kjb7kcoe" path="res://echo_scenes/Rock_Roast_Echo.tscn" id="93_dtd2s"]
-[ext_resource type="PackedScene" uid="uid://domqdhi288lqy" path="res://echo_scenes/Rope_Echo.tscn" id="94_t4n3y"]
-[ext_resource type="PackedScene" uid="uid://ckxdpnk554pka" path="res://echo_scenes/Sand_Crab_Echo.tscn" id="95_4tkwg"]
-[ext_resource type="PackedScene" uid="uid://b7h3ogvni1dwh" path="res://echo_scenes/Sand_Piranha_Echo.tscn" id="96_jhc3u"]
-[ext_resource type="PackedScene" uid="uid://c8v4y0hkgi7he" path="res://echo_scenes/Sea_Urchin_Echo.tscn" id="97_mf0pp"]
-[ext_resource type="PackedScene" uid="uid://ctxctnwfkc5t8" path="res://echo_scenes/Sign_Echo.tscn" id="98_najbn"]
-[ext_resource type="PackedScene" uid="uid://d4i3n5mx2m3xc" path="res://echo_scenes/Snake_Statue_Echo.tscn" id="99_xug1p"]
-[ext_resource type="PackedScene" uid="uid://btwfgxmfdt04n" path="res://echo_scenes/Snomaul_Echo.tscn" id="100_wf3bs"]
-[ext_resource type="PackedScene" uid="uid://bb788pfr7l20o" path="res://echo_scenes/Snowball_Echo.tscn" id="101_ykbry"]
-[ext_resource type="PackedScene" uid="uid://bnqj4bdfsffbt" path="res://echo_scenes/Soft_Bed_Echo.tscn" id="102_5xjs6"]
-[ext_resource type="PackedScene" uid="uid://dfsgss2rc4egb" path="res://echo_scenes/Spark_Echo.tscn" id="103_nud38"]
-[ext_resource type="PackedScene" uid="uid://dq57p31hu7867" path="res://echo_scenes/Spear_Moblin_Echo.tscn" id="104_w5d6t"]
-[ext_resource type="PackedScene" uid="uid://rxymiugc2upd" path="res://echo_scenes/Spear_Moblin_Lv_2_Echo.tscn" id="105_58j1f"]
-[ext_resource type="PackedScene" uid="uid://dqthqmsssxcv5" path="res://echo_scenes/Spiked_Roller_Echo.tscn" id="106_hips6"]
-[ext_resource type="PackedScene" uid="uid://57vckyhxiu1g" path="res://echo_scenes/Strandtula_Echo.tscn" id="107_geq15"]
-[ext_resource type="PackedScene" uid="uid://cgna62wodw3jk" path="res://echo_scenes/Stuffed_Toy_Echo.tscn" id="108_ebnu7"]
-[ext_resource type="PackedScene" uid="uid://bxbovsgjkkacr" path="res://echo_scenes/Sword_Moblin_Echo.tscn" id="109_qvdty"]
-[ext_resource type="PackedScene" uid="uid://c7pterwrh28bs" path="res://echo_scenes/Sword_Moblin_Lv_2_Echo.tscn" id="110_cvd2b"]
-[ext_resource type="PackedScene" uid="uid://bx0djrypwa243" path="res://echo_scenes/Sword_Moblin_Lv_3_Echo.tscn" id="111_oifrx"]
-[ext_resource type="PackedScene" uid="uid://b1wymbgb2xmi7" path="res://echo_scenes/Table_%28echo%29.tscn" id="112_vmt86"]
-[ext_resource type="PackedScene" uid="uid://dkw42c7j1klsy" path="res://echo_scenes/Tangler_Echo.tscn" id="113_nhuup"]
-[ext_resource type="PackedScene" uid="uid://btcq0ikl7jfhi" path="res://echo_scenes/Tangler_Lv_2_Echo.tscn" id="114_8xo6f"]
-[ext_resource type="PackedScene" uid="uid://dwee87vnnkmc3" path="res://echo_scenes/Tektite_Echo.tscn" id="115_dfl0r"]
-[ext_resource type="PackedScene" uid="uid://b48q62g0312ph" path="res://echo_scenes/Tektite_Lv_2_Echo.tscn" id="116_xxcvj"]
-[ext_resource type="PackedScene" uid="uid://cl75c7rv153uj" path="res://echo_scenes/Temper_Tweelus_Echo.tscn" id="117_ng0rl"]
-[ext_resource type="PackedScene" uid="uid://b0d5qr14hbv02" path="res://echo_scenes/Torch_Slug_Echo.tscn" id="118_swvyl"]
-[ext_resource type="PackedScene" uid="uid://bx3un6w8sjxjf" path="res://echo_scenes/Tornando_Echo.tscn" id="119_aq6ey"]
-[ext_resource type="PackedScene" uid="uid://dj1ecwqtyvdpc" path="res://echo_scenes/Trampoline_Echo.tscn" id="120_w4tn5"]
-[ext_resource type="PackedScene" uid="uid://dxtdv2oyds2lu" path="res://echo_scenes/Tweelus_Echo.tscn" id="121_gww4h"]
-[ext_resource type="PackedScene" uid="uid://beb87tb6fymwp" path="res://echo_scenes/Water_Block_Echo.tscn" id="122_h7ayj"]
-[ext_resource type="PackedScene" uid="uid://cgcgygqemcnj4" path="res://echo_scenes/White_Wolfos_Echo.tscn" id="123_hiy6n"]
-[ext_resource type="PackedScene" uid="uid://db4kn1dkkvt78" path="res://echo_scenes/Wind_Cannon_Echo.tscn" id="124_gl3i7"]
-[ext_resource type="PackedScene" uid="uid://c4rbw2p2sivg" path="res://echo_scenes/Wolfos_Echo.tscn" id="125_qi2hl"]
-[ext_resource type="PackedScene" uid="uid://dkg85fdq3a5ne" path="res://echo_scenes/Wooden_Box_Echo.tscn" id="126_r8okl"]
-[ext_resource type="PackedScene" uid="uid://v6oo7b6bap1s" path="res://echo_scenes/Zelda%27s_Bed_Echo.tscn" id="127_6gxv7"]
-[ext_resource type="PackedScene" uid="uid://liiadvr423p0" path="res://echo_scenes/Zirro_Echo.tscn" id="128_1sr0h"]
-[ext_resource type="PackedScene" uid="uid://cyyl58ogfpqk5" path="res://echo_scenes/Zol_Echo.tscn" id="129_vycpe"]
-[ext_resource type="Script" path="res://spiral_ui.gd" id="131_7h75x"]
-[ext_resource type="Script" path="res://cursor.gd" id="131_blh5b"]
-[ext_resource type="PackedScene" uid="uid://bopwvd8pljrxj" path="res://visualize_ui.tscn" id="132_jmclc"]
+[ext_resource type="PackedScene" uid="uid://uoxsu57uevbr" path="res://echo_scenes/Ancient_Orb_Echo.tscn" id="4_gx2ab"]
+[ext_resource type="PackedScene" uid="uid://d12n62uvioisa" path="res://echo_scenes/Armos_Echo.tscn" id="5_3odn0"]
+[ext_resource type="PackedScene" uid="uid://p7huja6wsaop" path="res://echo_scenes/Aruroda_Echo.tscn" id="6_uahru"]
+[ext_resource type="PackedScene" uid="uid://c7leox113te8x" path="res://echo_scenes/Baby_Gohma_Echo.tscn" id="7_qgnhf"]
+[ext_resource type="PackedScene" uid="uid://b87r1tsmph44e" path="res://echo_scenes/Ball_and_Chain_Trooper_Echo.tscn" id="8_xnxb8"]
+[ext_resource type="PackedScene" uid="uid://b2bh54iw7heq3" path="res://echo_scenes/Beakon_Echo.tscn" id="9_hl5po"]
+[ext_resource type="PackedScene" uid="uid://fd8k0givvrr2" path="res://echo_scenes/Beamos_Echo.tscn" id="10_rg0fh"]
+[ext_resource type="PackedScene" uid="uid://1q6tiy016gxv" path="res://echo_scenes/Beetle_Echo.tscn" id="11_q2qbc"]
+[ext_resource type="PackedScene" uid="uid://djg2oe4186ofr" path="res://echo_scenes/Beetle_Mound_Echo.tscn" id="12_mov1x"]
+[ext_resource type="PackedScene" uid="uid://cleg8xfcpdag5" path="res://echo_scenes/Bio_Deku_Baba_Echo.tscn" id="13_64215"]
+[ext_resource type="PackedScene" uid="uid://bb14s4d4b16oq" path="res://echo_scenes/Biri_Echo.tscn" id="14_2jwlu"]
+[ext_resource type="PackedScene" uid="uid://dn33a2jp30m88" path="res://echo_scenes/Bombfish_Echo.tscn" id="15_qnpk8"]
+[ext_resource type="PackedScene" uid="uid://b5ykmq2oc0mxn" path="res://echo_scenes/Boomerang_Boarblin_Echo.tscn" id="16_k73ri"]
+[ext_resource type="PackedScene" uid="uid://bs2kot2eqiu2f" path="res://echo_scenes/Boomerang_Boarblin_Lv_2_Echo.tscn" id="17_l1pax"]
+[ext_resource type="PackedScene" uid="uid://fi86sb5mu4ga" path="res://echo_scenes/Boulder_Echo.tscn" id="18_is3je"]
+[ext_resource type="PackedScene" uid="uid://cgw2gfy2hu188" path="res://echo_scenes/Brazier_Echo.tscn" id="19_oag6s"]
+[ext_resource type="PackedScene" uid="uid://blm08ie2cgxso" path="res://echo_scenes/Buzz_Blob_Echo.tscn" id="20_ec3bn"]
+[ext_resource type="PackedScene" uid="uid://c4w37cpxhativ" path="res://echo_scenes/Caromadillo_Echo.tscn" id="21_h37mh"]
+[ext_resource type="PackedScene" uid="uid://b6sxi6vh461uw" path="res://echo_scenes/Caromadillo_Lv_2_Echo.tscn" id="22_45o7c"]
+[ext_resource type="PackedScene" uid="uid://b2xxcj5ee3p0o" path="res://echo_scenes/Carrot_Echo.tscn" id="23_n5es1"]
+[ext_resource type="PackedScene" uid="uid://ep17go5o6qvh" path="res://echo_scenes/Cat_Statue_Echo.tscn" id="24_daace"]
+[ext_resource type="PackedScene" uid="uid://bpyehnflcbibr" path="res://echo_scenes/Chompfin_Echo.tscn" id="25_hp5wa"]
+[ext_resource type="PackedScene" uid="uid://c5otc4qjxskoq" path="res://echo_scenes/Cloud_Echo.tscn" id="26_d7sm4"]
+[ext_resource type="PackedScene" uid="uid://dtnnwjb5c34v3" path="res://echo_scenes/Club_Boarblin_Echo.tscn" id="27_nvyl2"]
+[ext_resource type="PackedScene" uid="uid://2iur4a4q6e8t" path="res://echo_scenes/Club_Boarblin_Lv_2_Echo.tscn" id="28_3b6ni"]
+[ext_resource type="PackedScene" uid="uid://cwagteh00h4pp" path="res://echo_scenes/Crawltula_Echo.tscn" id="29_canld"]
+[ext_resource type="PackedScene" uid="uid://dp6ewbkndl3hb" path="res://echo_scenes/Crow_Echo.tscn" id="30_64alq"]
+[ext_resource type="PackedScene" uid="uid://blldl1dyni0jl" path="res://echo_scenes/Darknut_Echo.tscn" id="31_dlh8d"]
+[ext_resource type="PackedScene" uid="uid://dv87tpda2tbbd" path="res://echo_scenes/Darknut_Lv_2_Echo.tscn" id="32_56adi"]
+[ext_resource type="PackedScene" uid="uid://bgqe35lj0fwrs" path="res://echo_scenes/Darknut_Lv_3_Echo.tscn" id="33_nvhdg"]
+[ext_resource type="PackedScene" uid="uid://hb36n4lbe51e" path="res://echo_scenes/Decorative_Shrub_Echo.tscn" id="34_i8y5m"]
+[ext_resource type="PackedScene" uid="uid://bda51ijb02d0a" path="res://echo_scenes/Deku_Baba_Echo.tscn" id="35_bv8o2"]
+[ext_resource type="PackedScene" uid="uid://bge1saocaxgyc" path="res://echo_scenes/Deku_Baba_Lv_2_Echo.tscn" id="36_tpbhi"]
+[ext_resource type="PackedScene" uid="uid://b1gjjo3eqq1e2" path="res://echo_scenes/Drippitune_Echo.tscn" id="37_62fxg"]
+[ext_resource type="PackedScene" uid="uid://b6d8fqbqrg8uw" path="res://echo_scenes/Electric_Keese_Echo.tscn" id="38_ceduv"]
+[ext_resource type="PackedScene" uid="uid://dy5ycy8kf4hiy" path="res://echo_scenes/Electric_Wizzrobe_Echo.tscn" id="39_f2c7n"]
+[ext_resource type="PackedScene" uid="uid://d12p4vnn1aj2e" path="res://echo_scenes/Elephant_Statue_Echo.tscn" id="40_7s4a5"]
+[ext_resource type="PackedScene" uid="uid://dkftghgack1ci" path="res://echo_scenes/Firework_Echo.tscn" id="41_kyd3f"]
+[ext_resource type="PackedScene" uid="uid://ca848hai8mel5" path="res://echo_scenes/Fire_Keese_Echo.tscn" id="42_bwob8"]
+[ext_resource type="PackedScene" uid="uid://ewsi7r40xfcs" path="res://echo_scenes/Fire_Octo_Echo.tscn" id="43_c720c"]
+[ext_resource type="PackedScene" uid="uid://bsyb05e6hayh8" path="res://echo_scenes/Fire_Wizzrobe_Echo.tscn" id="44_wwu50"]
+[ext_resource type="PackedScene" uid="uid://bdfmxent3bijy" path="res://echo_scenes/Flying_Tile_Echo.tscn" id="45_gp6ew"]
+[ext_resource type="PackedScene" uid="uid://bni2r8mpsdlqe" path="res://echo_scenes/Freezard_Echo.tscn" id="46_0vdvx"]
+[ext_resource type="PackedScene" uid="uid://dfyha0hbg83hk" path="res://echo_scenes/Freeze_Slug_Echo.tscn" id="47_y081v"]
+[ext_resource type="PackedScene" uid="uid://cs3xn5hssahty" path="res://echo_scenes/Gerudo_Pot_Echo.tscn" id="48_pp5k1"]
+[ext_resource type="PackedScene" uid="uid://csjiafjpmc6tq" path="res://echo_scenes/Ghini_Echo.tscn" id="49_j3a72"]
+[ext_resource type="PackedScene" uid="uid://cllnj2x8somns" path="res://echo_scenes/Ghini_Lv_2_Echo.tscn" id="50_4ca3j"]
+[ext_resource type="PackedScene" uid="uid://cd3gkt8tolpnb" path="res://echo_scenes/Ghirro_Echo.tscn" id="51_l0eb5"]
+[ext_resource type="PackedScene" uid="uid://bjj07ffvwh884" path="res://echo_scenes/Giant_Goponga_Flower_Echo.tscn" id="52_8vfl3"]
+[ext_resource type="PackedScene" uid="uid://jfedybsjn6gh" path="res://echo_scenes/Gibdo_Echo.tscn" id="53_m8ewy"]
+[ext_resource type="PackedScene" uid="uid://wlwrosqbmvv0" path="res://echo_scenes/Gibdo_Lv_2.tscn" id="54_k63ds"]
+[ext_resource type="PackedScene" uid="uid://rilstbhrio2f" path="res://echo_scenes/Goo_Specter_Echo.tscn" id="55_iprp0"]
+[ext_resource type="PackedScene" uid="uid://wel1c84nu6vv" path="res://echo_scenes/Grilled_Fish_Echo.tscn" id="56_ptvoi"]
+[ext_resource type="PackedScene" uid="uid://d38rfp480tnt5" path="res://echo_scenes/Guay_Echo.tscn" id="57_lcovl"]
+[ext_resource type="PackedScene" uid="uid://0hmfldbk0uf7" path="res://echo_scenes/Gustmaster_Echo.tscn" id="58_f3vi1"]
+[ext_resource type="PackedScene" uid="uid://cmvvnqdddyagm" path="res://echo_scenes/Hawk_Statue_Echo.tscn" id="59_x0vkp"]
+[ext_resource type="PackedScene" uid="uid://gmgogqxhiyj0" path="res://echo_scenes/Hoarder_Echo.tscn" id="60_q5t8j"]
+[ext_resource type="PackedScene" uid="uid://cseu6mjpiag14" path="res://echo_scenes/Holmill_Echo.tscn" id="61_6dyog"]
+[ext_resource type="PackedScene" uid="uid://nc5j12khs13w" path="res://echo_scenes/Hydrozol_Echo.tscn" id="62_e4odk"]
+[ext_resource type="PackedScene" uid="uid://daf2krp0qvlrg" path="res://echo_scenes/Hyrule_Castle_Pot_Echo.tscn" id="63_fp5cc"]
+[ext_resource type="PackedScene" uid="uid://ctr8xca8vu1b4" path="res://echo_scenes/Ice_Block_Echo.tscn" id="64_cwvb7"]
+[ext_resource type="PackedScene" uid="uid://cqo24pe1qcoai" path="res://echo_scenes/Ice_Keese_Echo.tscn" id="65_wmteq"]
+[ext_resource type="PackedScene" uid="uid://camyditbdsik8" path="res://echo_scenes/Ice_Octo_Echo.tscn" id="66_r32nx"]
+[ext_resource type="PackedScene" uid="uid://c6s8bbxclbs4m" path="res://echo_scenes/Ice_Wizzrobe_Echo.tscn" id="67_64x01"]
+[ext_resource type="PackedScene" uid="uid://cc576ng2e37se" path="res://echo_scenes/Ignizol_Echo.tscn" id="68_btqtk"]
+[ext_resource type="PackedScene" uid="uid://b0tau7bvsgfdr" path="res://echo_scenes/Keese_Echo.tscn" id="69_r722f"]
+[ext_resource type="PackedScene" uid="uid://dic4qe0xnns7t" path="res://echo_scenes/Lava_Rock_Echo.tscn" id="70_4tx55"]
+[ext_resource type="PackedScene" uid="uid://cdvcr34jiqhy7" path="res://echo_scenes/Leever_Echo.tscn" id="71_o4yi1"]
+[ext_resource type="PackedScene" uid="uid://xtdf3d7s5frr" path="res://echo_scenes/Lizalfos_%28echoes_of_wisdom%29.tscn" id="72_uacyu"]
+[ext_resource type="PackedScene" uid="uid://dmxls0mxfq3hx" path="res://echo_scenes/Lizalfos_Lv_2_Echo.tscn" id="73_jhhtw"]
+[ext_resource type="PackedScene" uid="uid://cl42bor2y27cd" path="res://echo_scenes/Lizalfos_Lv_3_Echo.tscn" id="74_a7xps"]
+[ext_resource type="PackedScene" uid="uid://barcjjc4xkuho" path="res://echo_scenes/Lynel_Echo.tscn" id="75_lln8q"]
+[ext_resource type="PackedScene" uid="uid://dti6mgvgoo0qr" path="res://echo_scenes/Meat_Echo.tscn" id="76_j7atm"]
+[ext_resource type="PackedScene" uid="uid://bjr6oj3ht4y25" path="res://echo_scenes/Mini-Moldorm_Echo.tscn" id="77_600rf"]
+[ext_resource type="PackedScene" uid="uid://drcvgv74mvlvm" path="res://echo_scenes/Moa_Echo.tscn" id="78_2kf1h"]
+[ext_resource type="PackedScene" uid="uid://c8qt3i31frat1" path="res://echo_scenes/Mothula_Echo.tscn" id="79_6m574"]
+[ext_resource type="PackedScene" uid="uid://bvlfb0n2aqxfw" path="res://echo_scenes/Mothula_Lv_2.tscn" id="80_v47vr"]
+[ext_resource type="PackedScene" uid="uid://bw1j3lenwgw0i" path="res://echo_scenes/Needlefly_Echo.tscn" id="81_52xn3"]
+[ext_resource type="PackedScene" uid="uid://cwundf56p6sif" path="res://echo_scenes/Octorok_Echo.tscn" id="82_nggr1"]
+[ext_resource type="PackedScene" uid="uid://csfp1vc16bjpa" path="res://echo_scenes/Old_Bed_Echo.tscn" id="83_lw77g"]
+[ext_resource type="PackedScene" uid="uid://dtrbm2ud004jm" path="res://echo_scenes/Pathblade_Echo.tscn" id="84_uwsc4"]
+[ext_resource type="PackedScene" uid="uid://dw2m0swqv6vky" path="res://echo_scenes/Peahat_Echo.tscn" id="85_u4ono"]
+[ext_resource type="PackedScene" uid="uid://c7oc7wdk664wf" path="res://echo_scenes/Piranha_Echo.tscn" id="86_n6e4g"]
+[ext_resource type="PackedScene" uid="uid://gqy7a4qk8v0d" path="res://echo_scenes/Platboom_Echo.tscn" id="87_304wt"]
+[ext_resource type="PackedScene" uid="uid://3qvgxqewd1xo" path="res://echo_scenes/Poe_Echo.tscn" id="88_a4v6p"]
+[ext_resource type="PackedScene" uid="uid://bbsb4xk7rwnf6" path="res://echo_scenes/Pot_Echo.tscn" id="89_3gixt"]
+[ext_resource type="PackedScene" uid="uid://byyjg3j0dge6i" path="res://echo_scenes/ReDead_Echo.tscn" id="90_17osu"]
+[ext_resource type="PackedScene" uid="uid://da2op847dybjr" path="res://echo_scenes/Ribbitune_Echo.tscn" id="91_abmwo"]
+[ext_resource type="PackedScene" uid="uid://c7oiu5ul41yeo" path="res://echo_scenes/Rock_Echo.tscn" id="92_e80d8"]
+[ext_resource type="PackedScene" uid="uid://crbyvlh2tn3mp" path="res://echo_scenes/Rock_Roast_Echo.tscn" id="93_dtd2s"]
+[ext_resource type="PackedScene" uid="uid://p6the025rdg3" path="res://echo_scenes/Rope_Echo.tscn" id="94_t4n3y"]
+[ext_resource type="PackedScene" uid="uid://b6ysipho7scts" path="res://echo_scenes/Sand_Crab_Echo.tscn" id="95_4tkwg"]
+[ext_resource type="PackedScene" uid="uid://d0a5cxxdc2g2b" path="res://echo_scenes/Sand_Piranha_Echo.tscn" id="96_jhc3u"]
+[ext_resource type="PackedScene" uid="uid://bi2wcuo8hffyy" path="res://echo_scenes/Sea_Urchin_Echo.tscn" id="97_mf0pp"]
+[ext_resource type="PackedScene" uid="uid://benxrgibtca0a" path="res://echo_scenes/Sign_Echo.tscn" id="98_najbn"]
+[ext_resource type="PackedScene" uid="uid://b42ws55ck3fn8" path="res://echo_scenes/Snake_Statue_Echo.tscn" id="99_xug1p"]
+[ext_resource type="PackedScene" uid="uid://dsbayhxcw6l52" path="res://echo_scenes/Snomaul_Echo.tscn" id="100_wf3bs"]
+[ext_resource type="PackedScene" uid="uid://1qfmi6eibmps" path="res://echo_scenes/Snowball_Echo.tscn" id="101_ykbry"]
+[ext_resource type="PackedScene" uid="uid://do6w3lwksuu2s" path="res://echo_scenes/Soft_Bed_Echo.tscn" id="102_5xjs6"]
+[ext_resource type="PackedScene" uid="uid://bndtd78qe62wd" path="res://echo_scenes/Spark_Echo.tscn" id="103_nud38"]
+[ext_resource type="PackedScene" uid="uid://sfh4wqtuso1d" path="res://echo_scenes/Spear_Moblin_Echo.tscn" id="104_w5d6t"]
+[ext_resource type="PackedScene" uid="uid://bti8of0onfdfd" path="res://echo_scenes/Spear_Moblin_Lv_2_Echo.tscn" id="105_58j1f"]
+[ext_resource type="PackedScene" uid="uid://cmcbv6h0pbdsl" path="res://echo_scenes/Spiked_Roller_Echo.tscn" id="106_hips6"]
+[ext_resource type="PackedScene" uid="uid://c1622xvxrjdyt" path="res://echo_scenes/Strandtula_Echo.tscn" id="107_geq15"]
+[ext_resource type="PackedScene" uid="uid://dr87sd7tbmovw" path="res://echo_scenes/Stuffed_Toy_Echo.tscn" id="108_ebnu7"]
+[ext_resource type="PackedScene" uid="uid://bh7jbpragf2mx" path="res://echo_scenes/Sword_Moblin_Echo.tscn" id="109_qvdty"]
+[ext_resource type="PackedScene" uid="uid://2rxmcmj8gngh" path="res://echo_scenes/Sword_Moblin_Lv_2_Echo.tscn" id="110_cvd2b"]
+[ext_resource type="PackedScene" uid="uid://b8lenpgmslxmr" path="res://echo_scenes/Sword_Moblin_Lv_3_Echo.tscn" id="111_oifrx"]
+[ext_resource type="PackedScene" uid="uid://cmrn5b54ec63o" path="res://echo_scenes/Table_%28echo%29.tscn" id="112_vmt86"]
+[ext_resource type="PackedScene" uid="uid://fuxrjfiom414" path="res://echo_scenes/Tangler_Echo.tscn" id="113_nhuup"]
+[ext_resource type="PackedScene" uid="uid://cseltald3nahk" path="res://echo_scenes/Tangler_Lv_2_Echo.tscn" id="114_8xo6f"]
+[ext_resource type="PackedScene" uid="uid://c06rrw2s43wsg" path="res://echo_scenes/Tektite_Echo.tscn" id="115_dfl0r"]
+[ext_resource type="PackedScene" uid="uid://c446nqdw2rc0" path="res://echo_scenes/Tektite_Lv_2_Echo.tscn" id="116_xxcvj"]
+[ext_resource type="PackedScene" uid="uid://c28kcuryqqp76" path="res://echo_scenes/Temper_Tweelus_Echo.tscn" id="117_ng0rl"]
+[ext_resource type="PackedScene" uid="uid://c5l334scb83c2" path="res://echo_scenes/Torch_Slug_Echo.tscn" id="118_swvyl"]
+[ext_resource type="PackedScene" uid="uid://bkuhk77uc66dg" path="res://echo_scenes/Tornando_Echo.tscn" id="119_aq6ey"]
+[ext_resource type="PackedScene" uid="uid://dkkks1patpy7k" path="res://echo_scenes/Trampoline_Echo.tscn" id="120_w4tn5"]
+[ext_resource type="PackedScene" uid="uid://bskhx1l2nxle7" path="res://echo_scenes/Tweelus_Echo.tscn" id="121_gww4h"]
+[ext_resource type="PackedScene" uid="uid://bbvcppebge1ki" path="res://echo_scenes/Water_Block_Echo.tscn" id="122_h7ayj"]
+[ext_resource type="PackedScene" uid="uid://djjdh8kojme3e" path="res://echo_scenes/White_Wolfos_Echo.tscn" id="123_hiy6n"]
+[ext_resource type="PackedScene" uid="uid://c3helgcs0p7ob" path="res://echo_scenes/Wind_Cannon_Echo.tscn" id="124_gl3i7"]
+[ext_resource type="PackedScene" uid="uid://c0rif1xctwqny" path="res://echo_scenes/Wolfos_Echo.tscn" id="125_qi2hl"]
+[ext_resource type="PackedScene" uid="uid://cg2hppob288v5" path="res://echo_scenes/Wooden_Box_Echo.tscn" id="126_r8okl"]
+[ext_resource type="PackedScene" uid="uid://cm3f244wsvrpu" path="res://echo_scenes/Zelda%27s_Bed_Echo.tscn" id="127_6gxv7"]
+[ext_resource type="PackedScene" uid="uid://dwlkdydp21btc" path="res://echo_scenes/Zirro_Echo.tscn" id="128_1sr0h"]
+[ext_resource type="PackedScene" uid="uid://b4c7q513wjq6" path="res://echo_scenes/Zol_Echo.tscn" id="129_vycpe"]
+[ext_resource type="Script" path="res://scripts/spiral_ui.gd" id="131_7h75x"]
+[ext_resource type="Script" path="res://scripts/cursor.gd" id="131_blh5b"]
+[ext_resource type="PackedScene" uid="uid://bopwvd8pljrxj" path="res://scenes/visualize_ui.tscn" id="132_jmclc"]
+[ext_resource type="PackedScene" uid="uid://beckxfhr8iu13" path="res://echo_scenes_circ/Albatrawl_Echo.tscn" id="134_r62ds"]
+[ext_resource type="PackedScene" uid="uid://b02bs7xpnr5qi" path="res://echo_scenes_circ/Ancient_Orb_Echo.tscn" id="135_j2qn8"]
+[ext_resource type="PackedScene" uid="uid://dk3te52vbs4x7" path="res://echo_scenes_circ/Armos_Echo.tscn" id="136_iughf"]
+[ext_resource type="PackedScene" uid="uid://b8vqb5uy0duwm" path="res://echo_scenes_circ/Aruroda_Echo.tscn" id="137_nvgf2"]
+[ext_resource type="PackedScene" uid="uid://dkdtcd3dgcung" path="res://echo_scenes_circ/Baby_Gohma_Echo.tscn" id="138_g7i77"]
+[ext_resource type="PackedScene" uid="uid://bqc22qqpjtyvr" path="res://echo_scenes_circ/Ball_and_Chain_Trooper_Echo.tscn" id="139_i3pab"]
+[ext_resource type="PackedScene" uid="uid://u08pn08qanu" path="res://echo_scenes_circ/Beakon_Echo.tscn" id="140_nnvn8"]
+[ext_resource type="PackedScene" uid="uid://7y46p861estg" path="res://echo_scenes_circ/Beamos_Echo.tscn" id="141_nynba"]
+[ext_resource type="PackedScene" uid="uid://bo5lkbbikibao" path="res://echo_scenes_circ/Beetle_Echo.tscn" id="142_jf0dl"]
+[ext_resource type="PackedScene" uid="uid://bnc07qyg2507l" path="res://echo_scenes_circ/Beetle_Mound_Echo.tscn" id="143_qkd2q"]
+[ext_resource type="PackedScene" uid="uid://btvg243detq2i" path="res://echo_scenes_circ/Bio_Deku_Baba_Echo.tscn" id="144_smynm"]
+[ext_resource type="PackedScene" uid="uid://6rjp5rnpec0v" path="res://echo_scenes_circ/Biri_Echo.tscn" id="145_kun85"]
+[ext_resource type="PackedScene" uid="uid://dn5thba5rj0q7" path="res://echo_scenes_circ/Bombfish_Echo.tscn" id="146_kw6q6"]
+[ext_resource type="PackedScene" uid="uid://ck5th36syrxaa" path="res://echo_scenes_circ/Boomerang_Boarblin_Echo.tscn" id="147_87qod"]
+[ext_resource type="PackedScene" uid="uid://d3g34uott85h4" path="res://echo_scenes_circ/Boomerang_Boarblin_Lv_2_Echo.tscn" id="148_pdtny"]
+[ext_resource type="PackedScene" uid="uid://cl63w3crhw5wc" path="res://echo_scenes_circ/Boulder_Echo.tscn" id="149_vmgyq"]
+[ext_resource type="PackedScene" uid="uid://dxhjh10doq328" path="res://echo_scenes_circ/Brazier_Echo.tscn" id="150_f7wxd"]
+[ext_resource type="PackedScene" uid="uid://cs0a7khblvsud" path="res://echo_scenes_circ/Buzz_Blob_Echo.tscn" id="151_ug02l"]
+[ext_resource type="PackedScene" uid="uid://r7akoeupvna" path="res://echo_scenes_circ/Caromadillo_Echo.tscn" id="152_c6hq4"]
+[ext_resource type="PackedScene" uid="uid://b682p3mu1afrj" path="res://echo_scenes_circ/Caromadillo_Lv_2_Echo.tscn" id="153_vneai"]
+[ext_resource type="PackedScene" uid="uid://dfj5vyqfyhgp4" path="res://echo_scenes_circ/Carrot_Echo.tscn" id="154_rh4np"]
+[ext_resource type="PackedScene" uid="uid://bosnbxt2vrrqa" path="res://echo_scenes_circ/Cat_Statue_Echo.tscn" id="155_coifr"]
+[ext_resource type="PackedScene" uid="uid://dqi7ykm8rpd43" path="res://echo_scenes_circ/Chompfin_Echo.tscn" id="156_hegqi"]
+[ext_resource type="PackedScene" uid="uid://ban4a5fr6gnni" path="res://echo_scenes_circ/Cloud_Echo.tscn" id="157_f13tv"]
+[ext_resource type="PackedScene" uid="uid://nk41dv7psxne" path="res://echo_scenes_circ/Club_Boarblin_Echo.tscn" id="158_ljtes"]
+[ext_resource type="PackedScene" uid="uid://cchd14n1xm0h4" path="res://echo_scenes_circ/Club_Boarblin_Lv_2_Echo.tscn" id="159_jycjg"]
+[ext_resource type="PackedScene" uid="uid://c6piw6og8v2cr" path="res://echo_scenes_circ/Crawltula_Echo.tscn" id="160_0cx0a"]
+[ext_resource type="PackedScene" uid="uid://irev0vx2qh50" path="res://echo_scenes_circ/Crow_Echo.tscn" id="161_1lg2c"]
+[ext_resource type="PackedScene" uid="uid://c70oyauyiynb4" path="res://echo_scenes_circ/Darknut_Echo.tscn" id="162_xktdy"]
+[ext_resource type="PackedScene" uid="uid://b703f0pswq0aa" path="res://echo_scenes_circ/Darknut_Lv_2_Echo.tscn" id="163_lin6k"]
+[ext_resource type="PackedScene" uid="uid://d2ocans5rhwee" path="res://echo_scenes_circ/Darknut_Lv_3_Echo.tscn" id="164_xtoqe"]
+[ext_resource type="PackedScene" uid="uid://cjhl21b5w5ksn" path="res://echo_scenes_circ/Decorative_Shrub_Echo.tscn" id="165_a0jvq"]
+[ext_resource type="PackedScene" uid="uid://b1dkefwmn75yb" path="res://echo_scenes_circ/Deku_Baba_Echo.tscn" id="166_tkcyq"]
+[ext_resource type="PackedScene" uid="uid://crnwx0qosm2s" path="res://echo_scenes_circ/Deku_Baba_Lv_2_Echo.tscn" id="167_dcimh"]
+[ext_resource type="PackedScene" uid="uid://dxs468qnlf145" path="res://echo_scenes_circ/Drippitune_Echo.tscn" id="168_il5gj"]
+[ext_resource type="PackedScene" uid="uid://bjlibg6kt36dh" path="res://echo_scenes_circ/Electric_Keese_Echo.tscn" id="169_q3oqk"]
+[ext_resource type="PackedScene" uid="uid://dgurafggkoopf" path="res://echo_scenes_circ/Electric_Wizzrobe_Echo.tscn" id="170_lc07o"]
+[ext_resource type="PackedScene" uid="uid://ddnjmed0hw70h" path="res://echo_scenes_circ/Elephant_Statue_Echo.tscn" id="171_2xn1r"]
+[ext_resource type="PackedScene" uid="uid://bw42ex2wam7hd" path="res://echo_scenes_circ/Firework_Echo.tscn" id="172_tjsqs"]
+[ext_resource type="PackedScene" uid="uid://c8nww77crkmlf" path="res://echo_scenes_circ/Fire_Keese_Echo.tscn" id="173_07jeo"]
+[ext_resource type="PackedScene" uid="uid://ghno5gkqjnmk" path="res://echo_scenes_circ/Fire_Octo_Echo.tscn" id="174_s26um"]
+[ext_resource type="PackedScene" uid="uid://bwcdhimwcbkcw" path="res://echo_scenes_circ/Fire_Wizzrobe_Echo.tscn" id="175_28ibo"]
+[ext_resource type="PackedScene" uid="uid://jnorxipbne3n" path="res://echo_scenes_circ/Flying_Tile_Echo.tscn" id="176_4nbto"]
+[ext_resource type="PackedScene" uid="uid://b46fyphjbiem0" path="res://echo_scenes_circ/Freezard_Echo.tscn" id="177_62oc5"]
+[ext_resource type="PackedScene" uid="uid://ptipqr30ouyq" path="res://echo_scenes_circ/Freeze_Slug_Echo.tscn" id="178_vdag8"]
+[ext_resource type="PackedScene" uid="uid://b60i2vmjhwdim" path="res://echo_scenes_circ/Gerudo_Pot_Echo.tscn" id="179_jc455"]
+[ext_resource type="PackedScene" uid="uid://bgrbpicp0l8r5" path="res://echo_scenes_circ/Ghini_Echo.tscn" id="180_e6qp2"]
+[ext_resource type="PackedScene" uid="uid://c3163121ha1ic" path="res://echo_scenes_circ/Ghini_Lv_2_Echo.tscn" id="181_c7j0m"]
+[ext_resource type="PackedScene" uid="uid://c33ti2n5vvalv" path="res://echo_scenes_circ/Ghirro_Echo.tscn" id="182_bmltn"]
+[ext_resource type="PackedScene" uid="uid://ceu6oxrbkfny6" path="res://echo_scenes_circ/Giant_Goponga_Flower_Echo.tscn" id="183_4dcit"]
+[ext_resource type="PackedScene" uid="uid://b1mbukmylr652" path="res://echo_scenes_circ/Gibdo_Echo.tscn" id="184_85sia"]
+[ext_resource type="PackedScene" uid="uid://b4lx1xxiaixaa" path="res://echo_scenes_circ/Gibdo_Lv_2.tscn" id="185_a5c0t"]
+[ext_resource type="PackedScene" uid="uid://b4kim68clba4v" path="res://echo_scenes_circ/Goo_Specter_Echo.tscn" id="186_pdnqq"]
+[ext_resource type="PackedScene" uid="uid://dr7k41n8geni1" path="res://echo_scenes_circ/Grilled_Fish_Echo.tscn" id="187_nwt0j"]
+[ext_resource type="PackedScene" uid="uid://3a8pha2xl4x6" path="res://echo_scenes_circ/Guay_Echo.tscn" id="188_bdx3p"]
+[ext_resource type="PackedScene" uid="uid://dx7ro54un8pua" path="res://echo_scenes_circ/Gustmaster_Echo.tscn" id="189_lg21h"]
+[ext_resource type="PackedScene" uid="uid://bdmcdr7b82u5j" path="res://echo_scenes_circ/Hawk_Statue_Echo.tscn" id="190_6dnca"]
+[ext_resource type="PackedScene" uid="uid://dtis5gq8514k4" path="res://echo_scenes_circ/Hoarder_Echo.tscn" id="191_eebou"]
+[ext_resource type="PackedScene" uid="uid://bo6dgtpo2dx63" path="res://echo_scenes_circ/Holmill_Echo.tscn" id="192_e7ygm"]
+[ext_resource type="PackedScene" uid="uid://krd52umpj7yj" path="res://echo_scenes_circ/Hydrozol_Echo.tscn" id="193_067f4"]
+[ext_resource type="PackedScene" uid="uid://fseu7icfrx77" path="res://echo_scenes_circ/Hyrule_Castle_Pot_Echo.tscn" id="194_j3b2b"]
+[ext_resource type="PackedScene" uid="uid://b0tgy37vo41va" path="res://echo_scenes_circ/Ice_Block_Echo.tscn" id="195_wjb3f"]
+[ext_resource type="PackedScene" uid="uid://o42kk6b8bp43" path="res://echo_scenes_circ/Ice_Keese_Echo.tscn" id="196_q0hh0"]
+[ext_resource type="PackedScene" uid="uid://ce8l4djvsnxro" path="res://echo_scenes_circ/Ice_Octo_Echo.tscn" id="197_2lnda"]
+[ext_resource type="PackedScene" uid="uid://d1ilwd3ykf4f3" path="res://echo_scenes_circ/Ice_Wizzrobe_Echo.tscn" id="198_38gm0"]
+[ext_resource type="PackedScene" uid="uid://gy3fvlb2udjo" path="res://echo_scenes_circ/Ignizol_Echo.tscn" id="199_38ksy"]
+[ext_resource type="PackedScene" uid="uid://c283il5p6loa8" path="res://echo_scenes_circ/Keese_Echo.tscn" id="200_yuosl"]
+[ext_resource type="PackedScene" uid="uid://twnckbngpfyd" path="res://echo_scenes_circ/Lava_Rock_Echo.tscn" id="201_wof6g"]
+[ext_resource type="PackedScene" uid="uid://2bebydyhijer" path="res://echo_scenes_circ/Leever_Echo.tscn" id="202_1pt31"]
+[ext_resource type="PackedScene" uid="uid://04ppb24wfb86" path="res://echo_scenes_circ/Lizalfos_%28echoes_of_wisdom%29.tscn" id="203_thm37"]
+[ext_resource type="PackedScene" uid="uid://cvawxfbeulder" path="res://echo_scenes_circ/Lizalfos_Lv_2_Echo.tscn" id="204_51u2w"]
+[ext_resource type="PackedScene" uid="uid://bamjnpysdw87n" path="res://echo_scenes_circ/Lizalfos_Lv_3_Echo.tscn" id="205_cjrgb"]
+[ext_resource type="PackedScene" uid="uid://durjsugnkdwcf" path="res://echo_scenes_circ/Lynel_Echo.tscn" id="206_bpe2l"]
+[ext_resource type="PackedScene" uid="uid://dpwvycyg7krc2" path="res://echo_scenes_circ/Meat_Echo.tscn" id="207_ev3ji"]
+[ext_resource type="PackedScene" uid="uid://bsoiksjorveuh" path="res://echo_scenes_circ/Mini-Moldorm_Echo.tscn" id="208_fkj7b"]
+[ext_resource type="PackedScene" uid="uid://dclplkmeva306" path="res://echo_scenes_circ/Moa_Echo.tscn" id="209_yrpxt"]
+[ext_resource type="PackedScene" uid="uid://gwuveto8hosp" path="res://echo_scenes_circ/Mothula_Echo.tscn" id="210_lgb3x"]
+[ext_resource type="PackedScene" uid="uid://cnki2yf5oyo4g" path="res://echo_scenes_circ/Mothula_Lv_2.tscn" id="211_q8h75"]
+[ext_resource type="PackedScene" uid="uid://ciymceb65cfhj" path="res://echo_scenes_circ/Needlefly_Echo.tscn" id="212_jy4sv"]
+[ext_resource type="PackedScene" uid="uid://bb6p1cvu5k1vh" path="res://echo_scenes_circ/Octorok_Echo.tscn" id="213_ej6sf"]
+[ext_resource type="PackedScene" uid="uid://5psahsrv0o2b" path="res://echo_scenes_circ/Old_Bed_Echo.tscn" id="214_dunab"]
+[ext_resource type="PackedScene" uid="uid://q8hltkgwv03i" path="res://echo_scenes_circ/Pathblade_Echo.tscn" id="215_virfm"]
+[ext_resource type="PackedScene" uid="uid://c133hqpsew505" path="res://echo_scenes_circ/Peahat_Echo.tscn" id="216_j4g32"]
+[ext_resource type="PackedScene" uid="uid://cvcwv43ho35pa" path="res://echo_scenes_circ/Piranha_Echo.tscn" id="217_q5tpv"]
+[ext_resource type="PackedScene" uid="uid://bhjqhymccg4pv" path="res://echo_scenes_circ/Platboom_Echo.tscn" id="218_w5rph"]
+[ext_resource type="PackedScene" uid="uid://2cih22dblb86" path="res://echo_scenes_circ/Poe_Echo.tscn" id="219_vgi66"]
+[ext_resource type="PackedScene" uid="uid://dmqqobiaxbyp7" path="res://echo_scenes_circ/Pot_Echo.tscn" id="220_hlhq0"]
+[ext_resource type="PackedScene" uid="uid://dff1mnqceyd7d" path="res://echo_scenes_circ/ReDead_Echo.tscn" id="221_uwlll"]
+[ext_resource type="PackedScene" uid="uid://qhbgt6p0plmu" path="res://echo_scenes_circ/Ribbitune_Echo.tscn" id="222_piuvy"]
+[ext_resource type="PackedScene" uid="uid://b0t83og0hrp1r" path="res://echo_scenes_circ/Rock_Echo.tscn" id="223_ra7ow"]
+[ext_resource type="PackedScene" uid="uid://ctv1uoyqytnet" path="res://echo_scenes_circ/Rock_Roast_Echo.tscn" id="224_w8es0"]
+[ext_resource type="PackedScene" uid="uid://6eqcte0js8jc" path="res://echo_scenes_circ/Rope_Echo.tscn" id="225_k1gi0"]
+[ext_resource type="PackedScene" uid="uid://bfjpv7lh7bgjl" path="res://echo_scenes_circ/Sand_Crab_Echo.tscn" id="226_apfcm"]
+[ext_resource type="PackedScene" uid="uid://daxlwrnvm57dy" path="res://echo_scenes_circ/Sand_Piranha_Echo.tscn" id="227_vbcqi"]
+[ext_resource type="PackedScene" uid="uid://dokyl5ngemap" path="res://echo_scenes_circ/Sea_Urchin_Echo.tscn" id="228_1vjbr"]
+[ext_resource type="PackedScene" uid="uid://d1xxxeaocbj8t" path="res://echo_scenes_circ/Sign_Echo.tscn" id="229_jdnmq"]
+[ext_resource type="PackedScene" uid="uid://vv2ynhrwm25y" path="res://echo_scenes_circ/Snake_Statue_Echo.tscn" id="230_mvwps"]
+[ext_resource type="PackedScene" uid="uid://bv731j137npir" path="res://echo_scenes_circ/Snomaul_Echo.tscn" id="231_afav2"]
+[ext_resource type="PackedScene" uid="uid://ua6mydcaafbh" path="res://echo_scenes_circ/Snowball_Echo.tscn" id="232_fmgw2"]
+[ext_resource type="PackedScene" uid="uid://5nwyi74yixm3" path="res://echo_scenes_circ/Soft_Bed_Echo.tscn" id="233_lwau5"]
+[ext_resource type="PackedScene" uid="uid://snwtty4njwdp" path="res://echo_scenes_circ/Spark_Echo.tscn" id="234_entgf"]
+[ext_resource type="PackedScene" uid="uid://psg40r5r7kn1" path="res://echo_scenes_circ/Spear_Moblin_Echo.tscn" id="235_xh8bb"]
+[ext_resource type="PackedScene" uid="uid://dmil1rwvpftk4" path="res://echo_scenes_circ/Spear_Moblin_Lv_2_Echo.tscn" id="236_78k8j"]
+[ext_resource type="PackedScene" uid="uid://b6a5vl82bfsoj" path="res://echo_scenes_circ/Spiked_Roller_Echo.tscn" id="237_mltov"]
+[ext_resource type="PackedScene" uid="uid://bhrj8o6hfg65o" path="res://echo_scenes_circ/Strandtula_Echo.tscn" id="238_cpf88"]
+[ext_resource type="PackedScene" uid="uid://bxkhj6d2043oq" path="res://echo_scenes_circ/Stuffed_Toy_Echo.tscn" id="239_sh4ay"]
+[ext_resource type="PackedScene" uid="uid://bhlepnm678vxg" path="res://echo_scenes_circ/Sword_Moblin_Echo.tscn" id="240_w1i7i"]
+[ext_resource type="PackedScene" uid="uid://bbumj0lrvpm7y" path="res://echo_scenes_circ/Sword_Moblin_Lv_2_Echo.tscn" id="241_5y25r"]
+[ext_resource type="PackedScene" uid="uid://cnf3k18b0dyfr" path="res://echo_scenes_circ/Sword_Moblin_Lv_3_Echo.tscn" id="242_1pgup"]
+[ext_resource type="PackedScene" uid="uid://2i0kq83s2m1i" path="res://echo_scenes_circ/Table_%28echo%29.tscn" id="243_0kagf"]
+[ext_resource type="PackedScene" uid="uid://bvyf0jeatvuln" path="res://echo_scenes_circ/Tangler_Echo.tscn" id="244_2fkxh"]
+[ext_resource type="PackedScene" uid="uid://bxebwoekkoqih" path="res://echo_scenes_circ/Tangler_Lv_2_Echo.tscn" id="245_w27ee"]
+[ext_resource type="PackedScene" uid="uid://yag5c42wmhur" path="res://echo_scenes_circ/Tektite_Echo.tscn" id="246_y1a7p"]
+[ext_resource type="PackedScene" uid="uid://b27msq7sktmqd" path="res://echo_scenes_circ/Tektite_Lv_2_Echo.tscn" id="247_8oe2t"]
+[ext_resource type="PackedScene" uid="uid://bt73dy27gq3i1" path="res://echo_scenes_circ/Temper_Tweelus_Echo.tscn" id="248_q6c01"]
+[ext_resource type="PackedScene" uid="uid://knpj82d412bp" path="res://echo_scenes_circ/Torch_Slug_Echo.tscn" id="249_ofupi"]
+[ext_resource type="PackedScene" uid="uid://clcknd1u1xydl" path="res://echo_scenes_circ/Tornando_Echo.tscn" id="250_8bbiw"]
+[ext_resource type="PackedScene" uid="uid://fhkc632fb0xp" path="res://echo_scenes_circ/Trampoline_Echo.tscn" id="251_as2nw"]
+[ext_resource type="PackedScene" uid="uid://cmsl1ihdqo5gm" path="res://echo_scenes_circ/Tweelus_Echo.tscn" id="252_evev8"]
+[ext_resource type="PackedScene" uid="uid://cg8k51ucc2ejv" path="res://echo_scenes_circ/Water_Block_Echo.tscn" id="253_smeqd"]
+[ext_resource type="PackedScene" uid="uid://h7qctcmi2w3q" path="res://echo_scenes_circ/White_Wolfos_Echo.tscn" id="254_7wjmf"]
+[ext_resource type="PackedScene" uid="uid://ce61ntytdmttx" path="res://echo_scenes_circ/Wind_Cannon_Echo.tscn" id="255_sh8qe"]
+[ext_resource type="PackedScene" uid="uid://5rvqidgc5fqa" path="res://echo_scenes_circ/Wolfos_Echo.tscn" id="256_km5nb"]
+[ext_resource type="PackedScene" uid="uid://btk30yx13nfx7" path="res://echo_scenes_circ/Wooden_Box_Echo.tscn" id="257_aiu88"]
+[ext_resource type="PackedScene" uid="uid://bbb08m01xnigs" path="res://echo_scenes_circ/Zelda%27s_Bed_Echo.tscn" id="258_krjjt"]
+[ext_resource type="PackedScene" uid="uid://dnskllawi4o5i" path="res://echo_scenes_circ/Zirro_Echo.tscn" id="259_o3rtk"]
+[ext_resource type="PackedScene" uid="uid://bw32nu8st3q66" path="res://echo_scenes_circ/Zol_Echo.tscn" id="260_n8uor"]
 
 [sub_resource type="Gradient" id="Gradient_dhee6"]
 offsets = PackedFloat32Array(0, 0.349845, 0.640867, 1)
-colors = PackedColorArray(0.568627, 0.568627, 0.568627, 0, 0, 0, 0, 0.67451, 0, 0, 0, 0.713726, 1, 1, 1, 0)
+colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 0.67451, 0, 0, 0, 0.713726, 0, 0, 0, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_ilrlx"]
 gradient = SubResource("Gradient_dhee6")
@@ -147,6 +274,18 @@ fill_from = Vector2(1, 1)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hi6d2"]
 texture = SubResource("GradientTexture2D_ilrlx")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ts28d"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.95, 0.945567, 0.817, 0.772549)
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+
 [sub_resource type="Environment" id="Environment_ibsdm"]
 background_mode = 3
 glow_enabled = true
@@ -154,7 +293,7 @@ glow_blend_mode = 1
 
 [node name="Main" type="Node2D" node_paths=PackedStringArray("horisontal", "spiral")]
 script = ExtResource("1_2xv1t")
-horisontal = [NodePath("CanvasLayer/HRow"), NodePath("CanvasLayer/CursorHorisontal")]
+horisontal = [NodePath("CanvasLayer/HRow"), NodePath("CanvasLayer/Cursor")]
 spiral = [NodePath("CanvasLayer/SpiralUI"), NodePath("CanvasLayer/CursorSpiral")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -187,8 +326,8 @@ visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 900.0
-offset_right = 14724.0
+offset_left = 519.0
+offset_right = 15107.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -583,24 +722,13 @@ layout_mode = 2
 [node name="EchoCard127" parent="CanvasLayer/HRow/HBoxContainer" instance=ExtResource("129_vycpe")]
 layout_mode = 2
 
-[node name="CursorHorisontal" parent="CanvasLayer" instance=ExtResource("3_qldjs")]
+[node name="Cursor" parent="CanvasLayer" instance=ExtResource("3_qldjs")]
 visible = false
+offset_left = -65.0
+offset_top = -85.0
+offset_right = 65.0
+offset_bottom = 85.0
 metadata/_edit_lock_ = true
-
-[node name="CursorSpiral" type="Control" parent="CanvasLayer" node_paths=PackedStringArray("spiral")]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("131_blh5b")
-spiral = NodePath("../SpiralUI")
-
-[node name="CursorFloat" parent="CanvasLayer/CursorSpiral" instance=ExtResource("3_qldjs")]
-modulate = Color(0.350052, 0.74052, 0.865251, 0.8)
-layout_mode = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="CursorInt" parent="CanvasLayer/CursorSpiral" instance=ExtResource("3_qldjs")]
-layout_mode = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="SpiralUI" type="Control" parent="CanvasLayer"]
 layout_mode = 3
@@ -611,386 +739,421 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("131_7h75x")
 
-[node name="EchoCard" parent="CanvasLayer/SpiralUI" instance=ExtResource("3_j426l")]
+[node name="EchoCard" parent="CanvasLayer/SpiralUI" instance=ExtResource("134_r62ds")]
 layout_mode = 0
 
-[node name="EchoCard2" parent="CanvasLayer/SpiralUI" instance=ExtResource("4_gx2ab")]
+[node name="EchoCard2" parent="CanvasLayer/SpiralUI" instance=ExtResource("135_j2qn8")]
 layout_mode = 0
 
-[node name="EchoCard3" parent="CanvasLayer/SpiralUI" instance=ExtResource("5_3odn0")]
+[node name="EchoCard3" parent="CanvasLayer/SpiralUI" instance=ExtResource("136_iughf")]
 layout_mode = 0
 
-[node name="EchoCard4" parent="CanvasLayer/SpiralUI" instance=ExtResource("6_uahru")]
+[node name="EchoCard4" parent="CanvasLayer/SpiralUI" instance=ExtResource("137_nvgf2")]
 layout_mode = 0
 
-[node name="EchoCard5" parent="CanvasLayer/SpiralUI" instance=ExtResource("7_qgnhf")]
+[node name="EchoCard5" parent="CanvasLayer/SpiralUI" instance=ExtResource("138_g7i77")]
 layout_mode = 0
 
-[node name="EchoCard6" parent="CanvasLayer/SpiralUI" instance=ExtResource("8_xnxb8")]
+[node name="EchoCard6" parent="CanvasLayer/SpiralUI" instance=ExtResource("139_i3pab")]
 layout_mode = 0
 
-[node name="EchoCard7" parent="CanvasLayer/SpiralUI" instance=ExtResource("9_hl5po")]
+[node name="EchoCard7" parent="CanvasLayer/SpiralUI" instance=ExtResource("140_nnvn8")]
 layout_mode = 0
 
-[node name="EchoCard8" parent="CanvasLayer/SpiralUI" instance=ExtResource("10_rg0fh")]
+[node name="EchoCard8" parent="CanvasLayer/SpiralUI" instance=ExtResource("141_nynba")]
 layout_mode = 0
 
-[node name="EchoCard9" parent="CanvasLayer/SpiralUI" instance=ExtResource("11_q2qbc")]
+[node name="EchoCard9" parent="CanvasLayer/SpiralUI" instance=ExtResource("142_jf0dl")]
 layout_mode = 0
 
-[node name="EchoCard10" parent="CanvasLayer/SpiralUI" instance=ExtResource("12_mov1x")]
+[node name="EchoCard10" parent="CanvasLayer/SpiralUI" instance=ExtResource("143_qkd2q")]
 layout_mode = 0
 
-[node name="EchoCard11" parent="CanvasLayer/SpiralUI" instance=ExtResource("13_64215")]
+[node name="EchoCard11" parent="CanvasLayer/SpiralUI" instance=ExtResource("144_smynm")]
 layout_mode = 0
 
-[node name="EchoCard12" parent="CanvasLayer/SpiralUI" instance=ExtResource("14_2jwlu")]
+[node name="EchoCard12" parent="CanvasLayer/SpiralUI" instance=ExtResource("145_kun85")]
 layout_mode = 0
 
-[node name="EchoCard13" parent="CanvasLayer/SpiralUI" instance=ExtResource("15_qnpk8")]
+[node name="EchoCard13" parent="CanvasLayer/SpiralUI" instance=ExtResource("146_kw6q6")]
 layout_mode = 0
 
-[node name="EchoCard14" parent="CanvasLayer/SpiralUI" instance=ExtResource("16_k73ri")]
+[node name="EchoCard14" parent="CanvasLayer/SpiralUI" instance=ExtResource("147_87qod")]
 layout_mode = 0
 
-[node name="EchoCard15" parent="CanvasLayer/SpiralUI" instance=ExtResource("17_l1pax")]
+[node name="EchoCard15" parent="CanvasLayer/SpiralUI" instance=ExtResource("148_pdtny")]
 layout_mode = 0
 
-[node name="EchoCard16" parent="CanvasLayer/SpiralUI" instance=ExtResource("18_is3je")]
+[node name="EchoCard16" parent="CanvasLayer/SpiralUI" instance=ExtResource("149_vmgyq")]
 layout_mode = 0
 
-[node name="EchoCard17" parent="CanvasLayer/SpiralUI" instance=ExtResource("19_oag6s")]
+[node name="EchoCard17" parent="CanvasLayer/SpiralUI" instance=ExtResource("150_f7wxd")]
 layout_mode = 0
 
-[node name="EchoCard18" parent="CanvasLayer/SpiralUI" instance=ExtResource("20_ec3bn")]
+[node name="EchoCard18" parent="CanvasLayer/SpiralUI" instance=ExtResource("151_ug02l")]
 layout_mode = 0
 
-[node name="EchoCard19" parent="CanvasLayer/SpiralUI" instance=ExtResource("21_h37mh")]
+[node name="EchoCard19" parent="CanvasLayer/SpiralUI" instance=ExtResource("152_c6hq4")]
 layout_mode = 0
 
-[node name="EchoCard20" parent="CanvasLayer/SpiralUI" instance=ExtResource("22_45o7c")]
+[node name="EchoCard20" parent="CanvasLayer/SpiralUI" instance=ExtResource("153_vneai")]
 layout_mode = 0
 
-[node name="EchoCard21" parent="CanvasLayer/SpiralUI" instance=ExtResource("23_n5es1")]
+[node name="EchoCard21" parent="CanvasLayer/SpiralUI" instance=ExtResource("154_rh4np")]
 layout_mode = 0
 
-[node name="EchoCard22" parent="CanvasLayer/SpiralUI" instance=ExtResource("24_daace")]
+[node name="EchoCard22" parent="CanvasLayer/SpiralUI" instance=ExtResource("155_coifr")]
 layout_mode = 0
 
-[node name="EchoCard23" parent="CanvasLayer/SpiralUI" instance=ExtResource("25_hp5wa")]
+[node name="EchoCard23" parent="CanvasLayer/SpiralUI" instance=ExtResource("156_hegqi")]
 layout_mode = 0
 
-[node name="EchoCard24" parent="CanvasLayer/SpiralUI" instance=ExtResource("26_d7sm4")]
+[node name="EchoCard24" parent="CanvasLayer/SpiralUI" instance=ExtResource("157_f13tv")]
 layout_mode = 0
 
-[node name="EchoCard25" parent="CanvasLayer/SpiralUI" instance=ExtResource("27_nvyl2")]
+[node name="EchoCard25" parent="CanvasLayer/SpiralUI" instance=ExtResource("158_ljtes")]
 layout_mode = 0
 
-[node name="EchoCard26" parent="CanvasLayer/SpiralUI" instance=ExtResource("28_3b6ni")]
+[node name="EchoCard26" parent="CanvasLayer/SpiralUI" instance=ExtResource("159_jycjg")]
 layout_mode = 0
 
-[node name="EchoCard27" parent="CanvasLayer/SpiralUI" instance=ExtResource("29_canld")]
+[node name="EchoCard27" parent="CanvasLayer/SpiralUI" instance=ExtResource("160_0cx0a")]
 layout_mode = 0
 
-[node name="EchoCard28" parent="CanvasLayer/SpiralUI" instance=ExtResource("30_64alq")]
+[node name="EchoCard28" parent="CanvasLayer/SpiralUI" instance=ExtResource("161_1lg2c")]
 layout_mode = 0
 
-[node name="EchoCard29" parent="CanvasLayer/SpiralUI" instance=ExtResource("31_dlh8d")]
+[node name="EchoCard29" parent="CanvasLayer/SpiralUI" instance=ExtResource("162_xktdy")]
 layout_mode = 0
 
-[node name="EchoCard30" parent="CanvasLayer/SpiralUI" instance=ExtResource("32_56adi")]
+[node name="EchoCard30" parent="CanvasLayer/SpiralUI" instance=ExtResource("163_lin6k")]
 layout_mode = 0
 
-[node name="EchoCard31" parent="CanvasLayer/SpiralUI" instance=ExtResource("33_nvhdg")]
+[node name="EchoCard31" parent="CanvasLayer/SpiralUI" instance=ExtResource("164_xtoqe")]
 layout_mode = 0
 
-[node name="EchoCard32" parent="CanvasLayer/SpiralUI" instance=ExtResource("34_i8y5m")]
+[node name="EchoCard32" parent="CanvasLayer/SpiralUI" instance=ExtResource("165_a0jvq")]
 layout_mode = 0
 
-[node name="EchoCard33" parent="CanvasLayer/SpiralUI" instance=ExtResource("35_bv8o2")]
+[node name="EchoCard33" parent="CanvasLayer/SpiralUI" instance=ExtResource("166_tkcyq")]
 layout_mode = 0
 
-[node name="EchoCard34" parent="CanvasLayer/SpiralUI" instance=ExtResource("36_tpbhi")]
+[node name="EchoCard34" parent="CanvasLayer/SpiralUI" instance=ExtResource("167_dcimh")]
 layout_mode = 0
 
-[node name="EchoCard35" parent="CanvasLayer/SpiralUI" instance=ExtResource("37_62fxg")]
+[node name="EchoCard35" parent="CanvasLayer/SpiralUI" instance=ExtResource("168_il5gj")]
 layout_mode = 0
 
-[node name="EchoCard36" parent="CanvasLayer/SpiralUI" instance=ExtResource("38_ceduv")]
+[node name="EchoCard36" parent="CanvasLayer/SpiralUI" instance=ExtResource("169_q3oqk")]
 layout_mode = 0
 
-[node name="EchoCard37" parent="CanvasLayer/SpiralUI" instance=ExtResource("39_f2c7n")]
+[node name="EchoCard37" parent="CanvasLayer/SpiralUI" instance=ExtResource("170_lc07o")]
 layout_mode = 0
 
-[node name="EchoCard38" parent="CanvasLayer/SpiralUI" instance=ExtResource("40_7s4a5")]
+[node name="EchoCard38" parent="CanvasLayer/SpiralUI" instance=ExtResource("171_2xn1r")]
 layout_mode = 0
 
-[node name="EchoCard39" parent="CanvasLayer/SpiralUI" instance=ExtResource("41_kyd3f")]
+[node name="EchoCard39" parent="CanvasLayer/SpiralUI" instance=ExtResource("172_tjsqs")]
 layout_mode = 0
 
-[node name="EchoCard40" parent="CanvasLayer/SpiralUI" instance=ExtResource("42_bwob8")]
+[node name="EchoCard40" parent="CanvasLayer/SpiralUI" instance=ExtResource("173_07jeo")]
 layout_mode = 0
 
-[node name="EchoCard41" parent="CanvasLayer/SpiralUI" instance=ExtResource("43_c720c")]
+[node name="EchoCard41" parent="CanvasLayer/SpiralUI" instance=ExtResource("174_s26um")]
 layout_mode = 0
 
-[node name="EchoCard42" parent="CanvasLayer/SpiralUI" instance=ExtResource("44_wwu50")]
+[node name="EchoCard42" parent="CanvasLayer/SpiralUI" instance=ExtResource("175_28ibo")]
 layout_mode = 0
 
-[node name="EchoCard43" parent="CanvasLayer/SpiralUI" instance=ExtResource("45_gp6ew")]
+[node name="EchoCard43" parent="CanvasLayer/SpiralUI" instance=ExtResource("176_4nbto")]
 layout_mode = 0
 
-[node name="EchoCard44" parent="CanvasLayer/SpiralUI" instance=ExtResource("46_0vdvx")]
+[node name="EchoCard44" parent="CanvasLayer/SpiralUI" instance=ExtResource("177_62oc5")]
 layout_mode = 0
 
-[node name="EchoCard45" parent="CanvasLayer/SpiralUI" instance=ExtResource("47_y081v")]
+[node name="EchoCard45" parent="CanvasLayer/SpiralUI" instance=ExtResource("178_vdag8")]
 layout_mode = 0
 
-[node name="EchoCard46" parent="CanvasLayer/SpiralUI" instance=ExtResource("48_pp5k1")]
+[node name="EchoCard46" parent="CanvasLayer/SpiralUI" instance=ExtResource("179_jc455")]
 layout_mode = 0
 
-[node name="EchoCard47" parent="CanvasLayer/SpiralUI" instance=ExtResource("49_j3a72")]
+[node name="EchoCard47" parent="CanvasLayer/SpiralUI" instance=ExtResource("180_e6qp2")]
 layout_mode = 0
 
-[node name="EchoCard48" parent="CanvasLayer/SpiralUI" instance=ExtResource("50_4ca3j")]
+[node name="EchoCard48" parent="CanvasLayer/SpiralUI" instance=ExtResource("181_c7j0m")]
 layout_mode = 0
 
-[node name="EchoCard49" parent="CanvasLayer/SpiralUI" instance=ExtResource("51_l0eb5")]
+[node name="EchoCard49" parent="CanvasLayer/SpiralUI" instance=ExtResource("182_bmltn")]
 layout_mode = 0
 
-[node name="EchoCard50" parent="CanvasLayer/SpiralUI" instance=ExtResource("52_8vfl3")]
+[node name="EchoCard50" parent="CanvasLayer/SpiralUI" instance=ExtResource("183_4dcit")]
 layout_mode = 0
 
-[node name="EchoCard51" parent="CanvasLayer/SpiralUI" instance=ExtResource("53_m8ewy")]
+[node name="EchoCard51" parent="CanvasLayer/SpiralUI" instance=ExtResource("184_85sia")]
 layout_mode = 0
 
-[node name="EchoCard52" parent="CanvasLayer/SpiralUI" instance=ExtResource("54_k63ds")]
+[node name="EchoCard52" parent="CanvasLayer/SpiralUI" instance=ExtResource("185_a5c0t")]
 layout_mode = 0
 
-[node name="EchoCard53" parent="CanvasLayer/SpiralUI" instance=ExtResource("55_iprp0")]
+[node name="EchoCard53" parent="CanvasLayer/SpiralUI" instance=ExtResource("186_pdnqq")]
 layout_mode = 0
 
-[node name="EchoCard54" parent="CanvasLayer/SpiralUI" instance=ExtResource("56_ptvoi")]
+[node name="EchoCard54" parent="CanvasLayer/SpiralUI" instance=ExtResource("187_nwt0j")]
 layout_mode = 0
 
-[node name="EchoCard55" parent="CanvasLayer/SpiralUI" instance=ExtResource("57_lcovl")]
+[node name="EchoCard55" parent="CanvasLayer/SpiralUI" instance=ExtResource("188_bdx3p")]
 layout_mode = 0
 
-[node name="EchoCard56" parent="CanvasLayer/SpiralUI" instance=ExtResource("58_f3vi1")]
+[node name="EchoCard56" parent="CanvasLayer/SpiralUI" instance=ExtResource("189_lg21h")]
 layout_mode = 0
 
-[node name="EchoCard57" parent="CanvasLayer/SpiralUI" instance=ExtResource("59_x0vkp")]
+[node name="EchoCard57" parent="CanvasLayer/SpiralUI" instance=ExtResource("190_6dnca")]
 layout_mode = 0
 
-[node name="EchoCard58" parent="CanvasLayer/SpiralUI" instance=ExtResource("60_q5t8j")]
+[node name="EchoCard58" parent="CanvasLayer/SpiralUI" instance=ExtResource("191_eebou")]
 layout_mode = 0
 
-[node name="EchoCard59" parent="CanvasLayer/SpiralUI" instance=ExtResource("61_6dyog")]
+[node name="EchoCard59" parent="CanvasLayer/SpiralUI" instance=ExtResource("192_e7ygm")]
 layout_mode = 0
 
-[node name="EchoCard60" parent="CanvasLayer/SpiralUI" instance=ExtResource("62_e4odk")]
+[node name="EchoCard60" parent="CanvasLayer/SpiralUI" instance=ExtResource("193_067f4")]
 layout_mode = 0
 
-[node name="EchoCard61" parent="CanvasLayer/SpiralUI" instance=ExtResource("63_fp5cc")]
+[node name="EchoCard61" parent="CanvasLayer/SpiralUI" instance=ExtResource("194_j3b2b")]
 layout_mode = 0
 
-[node name="EchoCard62" parent="CanvasLayer/SpiralUI" instance=ExtResource("64_cwvb7")]
+[node name="EchoCard62" parent="CanvasLayer/SpiralUI" instance=ExtResource("195_wjb3f")]
 layout_mode = 0
 
-[node name="EchoCard63" parent="CanvasLayer/SpiralUI" instance=ExtResource("65_wmteq")]
+[node name="EchoCard63" parent="CanvasLayer/SpiralUI" instance=ExtResource("196_q0hh0")]
 layout_mode = 0
 
-[node name="EchoCard64" parent="CanvasLayer/SpiralUI" instance=ExtResource("66_r32nx")]
+[node name="EchoCard64" parent="CanvasLayer/SpiralUI" instance=ExtResource("197_2lnda")]
 layout_mode = 0
 
-[node name="EchoCard65" parent="CanvasLayer/SpiralUI" instance=ExtResource("67_64x01")]
+[node name="EchoCard65" parent="CanvasLayer/SpiralUI" instance=ExtResource("198_38gm0")]
 layout_mode = 0
 
-[node name="EchoCard66" parent="CanvasLayer/SpiralUI" instance=ExtResource("68_btqtk")]
+[node name="EchoCard66" parent="CanvasLayer/SpiralUI" instance=ExtResource("199_38ksy")]
 layout_mode = 0
 
-[node name="EchoCard67" parent="CanvasLayer/SpiralUI" instance=ExtResource("69_r722f")]
+[node name="EchoCard67" parent="CanvasLayer/SpiralUI" instance=ExtResource("200_yuosl")]
 layout_mode = 0
 
-[node name="EchoCard68" parent="CanvasLayer/SpiralUI" instance=ExtResource("70_4tx55")]
+[node name="EchoCard68" parent="CanvasLayer/SpiralUI" instance=ExtResource("201_wof6g")]
 layout_mode = 0
 
-[node name="EchoCard69" parent="CanvasLayer/SpiralUI" instance=ExtResource("71_o4yi1")]
+[node name="EchoCard69" parent="CanvasLayer/SpiralUI" instance=ExtResource("202_1pt31")]
 layout_mode = 0
 
-[node name="EchoCard70" parent="CanvasLayer/SpiralUI" instance=ExtResource("72_uacyu")]
+[node name="EchoCard70" parent="CanvasLayer/SpiralUI" instance=ExtResource("203_thm37")]
 layout_mode = 0
 
-[node name="EchoCard71" parent="CanvasLayer/SpiralUI" instance=ExtResource("73_jhhtw")]
+[node name="EchoCard71" parent="CanvasLayer/SpiralUI" instance=ExtResource("204_51u2w")]
 layout_mode = 0
 
-[node name="EchoCard72" parent="CanvasLayer/SpiralUI" instance=ExtResource("74_a7xps")]
+[node name="EchoCard72" parent="CanvasLayer/SpiralUI" instance=ExtResource("205_cjrgb")]
 layout_mode = 0
 
-[node name="EchoCard73" parent="CanvasLayer/SpiralUI" instance=ExtResource("75_lln8q")]
+[node name="EchoCard73" parent="CanvasLayer/SpiralUI" instance=ExtResource("206_bpe2l")]
 layout_mode = 0
 
-[node name="EchoCard74" parent="CanvasLayer/SpiralUI" instance=ExtResource("76_j7atm")]
+[node name="EchoCard74" parent="CanvasLayer/SpiralUI" instance=ExtResource("207_ev3ji")]
 layout_mode = 0
 
-[node name="EchoCard75" parent="CanvasLayer/SpiralUI" instance=ExtResource("77_600rf")]
+[node name="EchoCard75" parent="CanvasLayer/SpiralUI" instance=ExtResource("208_fkj7b")]
 layout_mode = 0
 
-[node name="EchoCard76" parent="CanvasLayer/SpiralUI" instance=ExtResource("78_2kf1h")]
+[node name="EchoCard76" parent="CanvasLayer/SpiralUI" instance=ExtResource("209_yrpxt")]
 layout_mode = 0
 
-[node name="EchoCard77" parent="CanvasLayer/SpiralUI" instance=ExtResource("79_6m574")]
+[node name="EchoCard77" parent="CanvasLayer/SpiralUI" instance=ExtResource("210_lgb3x")]
 layout_mode = 0
 
-[node name="EchoCard78" parent="CanvasLayer/SpiralUI" instance=ExtResource("80_v47vr")]
+[node name="EchoCard78" parent="CanvasLayer/SpiralUI" instance=ExtResource("211_q8h75")]
 layout_mode = 0
 
-[node name="EchoCard79" parent="CanvasLayer/SpiralUI" instance=ExtResource("81_52xn3")]
+[node name="EchoCard79" parent="CanvasLayer/SpiralUI" instance=ExtResource("212_jy4sv")]
 layout_mode = 0
 
-[node name="EchoCard80" parent="CanvasLayer/SpiralUI" instance=ExtResource("82_nggr1")]
+[node name="EchoCard80" parent="CanvasLayer/SpiralUI" instance=ExtResource("213_ej6sf")]
 layout_mode = 0
 
-[node name="EchoCard81" parent="CanvasLayer/SpiralUI" instance=ExtResource("83_lw77g")]
+[node name="EchoCard81" parent="CanvasLayer/SpiralUI" instance=ExtResource("214_dunab")]
 layout_mode = 0
 
-[node name="EchoCard82" parent="CanvasLayer/SpiralUI" instance=ExtResource("84_uwsc4")]
+[node name="EchoCard82" parent="CanvasLayer/SpiralUI" instance=ExtResource("215_virfm")]
 layout_mode = 0
 
-[node name="EchoCard83" parent="CanvasLayer/SpiralUI" instance=ExtResource("85_u4ono")]
+[node name="EchoCard83" parent="CanvasLayer/SpiralUI" instance=ExtResource("216_j4g32")]
 layout_mode = 0
 
-[node name="EchoCard84" parent="CanvasLayer/SpiralUI" instance=ExtResource("86_n6e4g")]
+[node name="EchoCard84" parent="CanvasLayer/SpiralUI" instance=ExtResource("217_q5tpv")]
 layout_mode = 0
 
-[node name="EchoCard85" parent="CanvasLayer/SpiralUI" instance=ExtResource("87_304wt")]
+[node name="EchoCard85" parent="CanvasLayer/SpiralUI" instance=ExtResource("218_w5rph")]
 layout_mode = 0
 
-[node name="EchoCard86" parent="CanvasLayer/SpiralUI" instance=ExtResource("88_a4v6p")]
+[node name="EchoCard86" parent="CanvasLayer/SpiralUI" instance=ExtResource("219_vgi66")]
 layout_mode = 0
 
-[node name="EchoCard87" parent="CanvasLayer/SpiralUI" instance=ExtResource("89_3gixt")]
+[node name="EchoCard87" parent="CanvasLayer/SpiralUI" instance=ExtResource("220_hlhq0")]
 layout_mode = 0
 
-[node name="EchoCard88" parent="CanvasLayer/SpiralUI" instance=ExtResource("90_17osu")]
+[node name="EchoCard88" parent="CanvasLayer/SpiralUI" instance=ExtResource("221_uwlll")]
 layout_mode = 0
 
-[node name="EchoCard89" parent="CanvasLayer/SpiralUI" instance=ExtResource("91_abmwo")]
+[node name="EchoCard89" parent="CanvasLayer/SpiralUI" instance=ExtResource("222_piuvy")]
 layout_mode = 0
 
-[node name="EchoCard90" parent="CanvasLayer/SpiralUI" instance=ExtResource("92_e80d8")]
+[node name="EchoCard90" parent="CanvasLayer/SpiralUI" instance=ExtResource("223_ra7ow")]
 layout_mode = 0
 
-[node name="EchoCard91" parent="CanvasLayer/SpiralUI" instance=ExtResource("93_dtd2s")]
+[node name="EchoCard91" parent="CanvasLayer/SpiralUI" instance=ExtResource("224_w8es0")]
 layout_mode = 0
 
-[node name="EchoCard92" parent="CanvasLayer/SpiralUI" instance=ExtResource("94_t4n3y")]
+[node name="EchoCard92" parent="CanvasLayer/SpiralUI" instance=ExtResource("225_k1gi0")]
 layout_mode = 0
 
-[node name="EchoCard93" parent="CanvasLayer/SpiralUI" instance=ExtResource("95_4tkwg")]
+[node name="EchoCard93" parent="CanvasLayer/SpiralUI" instance=ExtResource("226_apfcm")]
 layout_mode = 0
 
-[node name="EchoCard94" parent="CanvasLayer/SpiralUI" instance=ExtResource("96_jhc3u")]
+[node name="EchoCard94" parent="CanvasLayer/SpiralUI" instance=ExtResource("227_vbcqi")]
 layout_mode = 0
 
-[node name="EchoCard95" parent="CanvasLayer/SpiralUI" instance=ExtResource("97_mf0pp")]
+[node name="EchoCard95" parent="CanvasLayer/SpiralUI" instance=ExtResource("228_1vjbr")]
 layout_mode = 0
 
-[node name="EchoCard96" parent="CanvasLayer/SpiralUI" instance=ExtResource("98_najbn")]
+[node name="EchoCard96" parent="CanvasLayer/SpiralUI" instance=ExtResource("229_jdnmq")]
 layout_mode = 0
 
-[node name="EchoCard97" parent="CanvasLayer/SpiralUI" instance=ExtResource("99_xug1p")]
+[node name="EchoCard97" parent="CanvasLayer/SpiralUI" instance=ExtResource("230_mvwps")]
 layout_mode = 0
 
-[node name="EchoCard98" parent="CanvasLayer/SpiralUI" instance=ExtResource("100_wf3bs")]
+[node name="EchoCard98" parent="CanvasLayer/SpiralUI" instance=ExtResource("231_afav2")]
 layout_mode = 0
 
-[node name="EchoCard99" parent="CanvasLayer/SpiralUI" instance=ExtResource("101_ykbry")]
+[node name="EchoCard99" parent="CanvasLayer/SpiralUI" instance=ExtResource("232_fmgw2")]
 layout_mode = 0
 
-[node name="EchoCard100" parent="CanvasLayer/SpiralUI" instance=ExtResource("102_5xjs6")]
+[node name="EchoCard100" parent="CanvasLayer/SpiralUI" instance=ExtResource("233_lwau5")]
 layout_mode = 0
 
-[node name="EchoCard101" parent="CanvasLayer/SpiralUI" instance=ExtResource("103_nud38")]
+[node name="EchoCard101" parent="CanvasLayer/SpiralUI" instance=ExtResource("234_entgf")]
 layout_mode = 0
 
-[node name="EchoCard102" parent="CanvasLayer/SpiralUI" instance=ExtResource("104_w5d6t")]
+[node name="EchoCard102" parent="CanvasLayer/SpiralUI" instance=ExtResource("235_xh8bb")]
 layout_mode = 0
 
-[node name="EchoCard103" parent="CanvasLayer/SpiralUI" instance=ExtResource("105_58j1f")]
+[node name="EchoCard103" parent="CanvasLayer/SpiralUI" instance=ExtResource("236_78k8j")]
 layout_mode = 0
 
-[node name="EchoCard104" parent="CanvasLayer/SpiralUI" instance=ExtResource("106_hips6")]
+[node name="EchoCard104" parent="CanvasLayer/SpiralUI" instance=ExtResource("237_mltov")]
 layout_mode = 0
 
-[node name="EchoCard105" parent="CanvasLayer/SpiralUI" instance=ExtResource("107_geq15")]
+[node name="EchoCard105" parent="CanvasLayer/SpiralUI" instance=ExtResource("238_cpf88")]
 layout_mode = 0
 
-[node name="EchoCard106" parent="CanvasLayer/SpiralUI" instance=ExtResource("108_ebnu7")]
+[node name="EchoCard106" parent="CanvasLayer/SpiralUI" instance=ExtResource("239_sh4ay")]
 layout_mode = 0
 
-[node name="EchoCard107" parent="CanvasLayer/SpiralUI" instance=ExtResource("109_qvdty")]
+[node name="EchoCard107" parent="CanvasLayer/SpiralUI" instance=ExtResource("240_w1i7i")]
 layout_mode = 0
 
-[node name="EchoCard108" parent="CanvasLayer/SpiralUI" instance=ExtResource("110_cvd2b")]
+[node name="EchoCard108" parent="CanvasLayer/SpiralUI" instance=ExtResource("241_5y25r")]
 layout_mode = 0
 
-[node name="EchoCard109" parent="CanvasLayer/SpiralUI" instance=ExtResource("111_oifrx")]
+[node name="EchoCard109" parent="CanvasLayer/SpiralUI" instance=ExtResource("242_1pgup")]
 layout_mode = 0
 
-[node name="EchoCard110" parent="CanvasLayer/SpiralUI" instance=ExtResource("112_vmt86")]
+[node name="EchoCard110" parent="CanvasLayer/SpiralUI" instance=ExtResource("243_0kagf")]
 layout_mode = 0
 
-[node name="EchoCard111" parent="CanvasLayer/SpiralUI" instance=ExtResource("113_nhuup")]
+[node name="EchoCard111" parent="CanvasLayer/SpiralUI" instance=ExtResource("244_2fkxh")]
 layout_mode = 0
 
-[node name="EchoCard112" parent="CanvasLayer/SpiralUI" instance=ExtResource("114_8xo6f")]
+[node name="EchoCard112" parent="CanvasLayer/SpiralUI" instance=ExtResource("245_w27ee")]
 layout_mode = 0
 
-[node name="EchoCard113" parent="CanvasLayer/SpiralUI" instance=ExtResource("115_dfl0r")]
+[node name="EchoCard113" parent="CanvasLayer/SpiralUI" instance=ExtResource("246_y1a7p")]
 layout_mode = 0
 
-[node name="EchoCard114" parent="CanvasLayer/SpiralUI" instance=ExtResource("116_xxcvj")]
+[node name="EchoCard114" parent="CanvasLayer/SpiralUI" instance=ExtResource("247_8oe2t")]
 layout_mode = 0
 
-[node name="EchoCard115" parent="CanvasLayer/SpiralUI" instance=ExtResource("117_ng0rl")]
+[node name="EchoCard115" parent="CanvasLayer/SpiralUI" instance=ExtResource("248_q6c01")]
 layout_mode = 0
 
-[node name="EchoCard116" parent="CanvasLayer/SpiralUI" instance=ExtResource("118_swvyl")]
+[node name="EchoCard116" parent="CanvasLayer/SpiralUI" instance=ExtResource("249_ofupi")]
 layout_mode = 0
 
-[node name="EchoCard117" parent="CanvasLayer/SpiralUI" instance=ExtResource("119_aq6ey")]
+[node name="EchoCard117" parent="CanvasLayer/SpiralUI" instance=ExtResource("250_8bbiw")]
 layout_mode = 0
 
-[node name="EchoCard118" parent="CanvasLayer/SpiralUI" instance=ExtResource("120_w4tn5")]
+[node name="EchoCard118" parent="CanvasLayer/SpiralUI" instance=ExtResource("251_as2nw")]
 layout_mode = 0
 
-[node name="EchoCard119" parent="CanvasLayer/SpiralUI" instance=ExtResource("121_gww4h")]
+[node name="EchoCard119" parent="CanvasLayer/SpiralUI" instance=ExtResource("252_evev8")]
 layout_mode = 0
 
-[node name="EchoCard120" parent="CanvasLayer/SpiralUI" instance=ExtResource("122_h7ayj")]
+[node name="EchoCard120" parent="CanvasLayer/SpiralUI" instance=ExtResource("253_smeqd")]
 layout_mode = 0
 
-[node name="EchoCard121" parent="CanvasLayer/SpiralUI" instance=ExtResource("123_hiy6n")]
+[node name="EchoCard121" parent="CanvasLayer/SpiralUI" instance=ExtResource("254_7wjmf")]
 layout_mode = 0
 
-[node name="EchoCard122" parent="CanvasLayer/SpiralUI" instance=ExtResource("124_gl3i7")]
+[node name="EchoCard122" parent="CanvasLayer/SpiralUI" instance=ExtResource("255_sh8qe")]
 layout_mode = 0
 
-[node name="EchoCard123" parent="CanvasLayer/SpiralUI" instance=ExtResource("125_qi2hl")]
+[node name="EchoCard123" parent="CanvasLayer/SpiralUI" instance=ExtResource("256_km5nb")]
 layout_mode = 0
 
-[node name="EchoCard124" parent="CanvasLayer/SpiralUI" instance=ExtResource("126_r8okl")]
+[node name="EchoCard124" parent="CanvasLayer/SpiralUI" instance=ExtResource("257_aiu88")]
 layout_mode = 0
 
-[node name="EchoCard125" parent="CanvasLayer/SpiralUI" instance=ExtResource("127_6gxv7")]
+[node name="EchoCard125" parent="CanvasLayer/SpiralUI" instance=ExtResource("258_krjjt")]
 layout_mode = 0
 
-[node name="EchoCard126" parent="CanvasLayer/SpiralUI" instance=ExtResource("128_1sr0h")]
+[node name="EchoCard126" parent="CanvasLayer/SpiralUI" instance=ExtResource("259_o3rtk")]
 layout_mode = 0
 
-[node name="EchoCard127" parent="CanvasLayer/SpiralUI" instance=ExtResource("129_vycpe")]
+[node name="EchoCard127" parent="CanvasLayer/SpiralUI" instance=ExtResource("260_n8uor")]
 layout_mode = 0
+
+[node name="CursorSpiral" type="Control" parent="CanvasLayer" node_paths=PackedStringArray("spiral")]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("131_blh5b")
+spiral = NodePath("../SpiralUI")
+
+[node name="CursorInt" type="Control" parent="CanvasLayer/CursorSpiral"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.0
+offset_top = -65.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/CursorSpiral/CursorInt"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -61.0
+offset_top = -61.0
+offset_right = 61.0
+offset_bottom = 61.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ts28d")
 
 [node name="FakeUI" type="MarginContainer" parent="CanvasLayer"]
 anchors_preset = 15
@@ -1008,8 +1171,9 @@ layout_mode = 2
 texture = ExtResource("4_76ssr")
 
 [node name="VisualizeUI" parent="CanvasLayer" instance=ExtResource("132_jmclc")]
+offset_top = -179.0
+offset_right = 188.0
 metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_ibsdm")
