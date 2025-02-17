@@ -9,6 +9,8 @@ const InputAngle = preload("res://scripts/input_angle.gd")
 var current_index = 0
 var input_angle = InputAngle.new()
 
+var selected_index = -1
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
@@ -25,15 +27,23 @@ func _process(delta: float) -> void:
 	
 	var angle = 0.0
 	var radius = std_radius - r_offset
+	
+	if current_index == selected_index:
+		return
+	selected_index = current_index
+	
 	for child in self.get_children():
-		child.position = (center - child.size / 2) + radius * Vector2.RIGHT.rotated(angle)
-		var scale = radius / std_radius
+		var tween = get_tree().create_tween().bind_node(self).set_trans(Tween.TRANS_LINEAR).set_parallel(true)
+		var clamp_radius = clamp(radius, 0, INF)
+		var position = (center - child.size / 2) + clamp_radius * Vector2.RIGHT.rotated(angle)
+		tween.tween_property(child, "position", position, 0.15)
 		
-		child.visible = scale > 0.1
-		child.scale = sqrt(radius / std_radius) * Vector2.ONE
+		var scale = sqrt(clamp_radius / std_radius) * Vector2.ONE
+		tween.tween_property(child, "scale", scale, 0.15)
 		
-		var transparency = clamp((radius - 50)/30 , 0, clamp((320 - radius)/30, 0, 1))
-		child.modulate = Color(1,1,1,transparency)
+		var transparency = clamp((clamp_radius - 50)/30 , 0, clamp((320 - clamp_radius)/30, 0, 1))
+		var modulate = Color(1,1,1,transparency)
+		tween.tween_property(child, "modulate", modulate, 0.05)
 		
 		angle += delta_rad
 		radius += delta_radius
